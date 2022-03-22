@@ -10,10 +10,10 @@
   fhir:Resource.id [ fhir:value "DDCC-QuestionnaireResponse-generateHealthCertificate"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>QuestionnaireResponse_Generate_Health_Certificate</h2><p>OPERATION: QuestionnaireResponse_Generate_Health_Certificate</p><p>The official URL for this operation definition is: </p><pre>http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate</pre><div><p>Generate one or more signed DDCC Documents based on a <a href=\"StructureDefinition-DDCCQuestionnaireResponse.html\">DDCC QuestionnaireResponse</a></p>\n</div><p>URL: [base]/QuestionnaireResponse/$generateHealthCertificate</p><p>URL: [base]/QuestionnaireResponse/[id]/$generateHealthCertificate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>response</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">QuestionnaireResponse</a></td><td/><td><div><p>The questionnaire response resource used to generate the DDCC Document.  Can only use one of response, id, or immunization.</p>\n</div></td></tr><tr><td>IN</td><td>id</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#id\">id</a></td><td/><td><div><p>The questionnaire response resource id used to generate the DDCC Document.  Can only use one of response, id, or immunization.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>The DDCC, including any QR codes, that was created under the <a href=\"transactions.html#submit-health-event-expected-actions\">Generate Health Certificate</a> expected actions</p>\n</div></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>QuestionnaireResponse_Generate_Health_Certificate</h2><p>OPERATION: QuestionnaireResponse_Generate_Health_Certificate</p><p>The official URL for this operation definition is: </p><pre>http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate</pre><div><p>Generate one or more signed DDCC Documents based on a <a href=\"StructureDefinition-DDCCQuestionnaireResponse.html\">DDCC QuestionnaireResponse</a></p>\n</div><p>URL: [base]/QuestionnaireResponse/$generateHealthCertificate</p><p>URL: [base]/Bundle/$generateHealthCertificate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>response</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/resource.html\">Resource</a></td><td/><td><div><p>The questionnaire response or bundle resource used to generate the DDCC Document.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>The DDCC, including any QR codes, that was created under the <a href=\"transactions.html#submit-health-event-expected-actions\">Generate Health Certificate</a> expected actions</p>\n</div></td></tr></table></div>"
   ];
   fhir:OperationDefinition.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate"];
-  fhir:OperationDefinition.version [ fhir:value "0.2.1"];
+  fhir:OperationDefinition.version [ fhir:value "0.3.1"];
   fhir:OperationDefinition.name [ fhir:value "QuestionnaireResponse_Generate_Health_Certificate"];
   fhir:OperationDefinition.title [ fhir:value "OperationDefinition for generating a health certificate (DDCC) that is signed."];
   fhir:OperationDefinition.status [ fhir:value "draft"];
@@ -43,28 +43,23 @@
   fhir:OperationDefinition.resource [
      fhir:value "QuestionnaireResponse";
      fhir:index 0
+  ], [
+     fhir:value "Bundle";
+     fhir:index 1
   ];
   fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
   fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
-  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean];
   fhir:OperationDefinition.parameter [
      fhir:index 0;
      fhir:OperationDefinition.parameter.name [ fhir:value "response" ];
      fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
-     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "The questionnaire response resource used to generate the DDCC Document.  Can only use one of response, id, or immunization." ];
-     fhir:OperationDefinition.parameter.type [ fhir:value "QuestionnaireResponse" ]
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The questionnaire response or bundle resource used to generate the DDCC Document." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Resource" ]
   ], [
      fhir:index 1;
-     fhir:OperationDefinition.parameter.name [ fhir:value "id" ];
-     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
-     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
-     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "The questionnaire response resource id used to generate the DDCC Document.  Can only use one of response, id, or immunization." ];
-     fhir:OperationDefinition.parameter.type [ fhir:value "id" ]
-  ], [
-     fhir:index 2;
      fhir:OperationDefinition.parameter.name [ fhir:value "return" ];
      fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
      fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];

@@ -9,7 +9,7 @@
     </div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator"/>
-  <version value="0.2.1"/>
+  <version value="0.3.1"/>
   <name value="WHO_DDCC_Generator"/>
   <title value="WHO DDCC Generator"/>
   <status value="draft"/>

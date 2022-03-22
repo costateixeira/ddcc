@@ -23,16 +23,16 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.extension","vaccineBrand","","Vaccine brand",1,1,"Y","","","Extension {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand]]} {[]}
-","DDCC Vaccine Brand for Immunization","DDCC Vaccine Brand for Immunization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Immunization.extension","vaccineBrand","","Vaccine brand",1,1,"Y","","","Extension {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]]} {[]}
+","DDCC Event Brand for Immunization","DDCC Event Brand for Immunization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension","vaccineMarketAuthorization","","Vaccine market authorization holder",0,1,"Y","","","Extension {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization]]} {[]}
 ","DDCC Vaccine Market Authorization for Immunization","DDCC Vaccine Market Authorization for Immunization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.extension","country","","Country of vaccination",1,1,"Y","","","Extension {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination]]} {[]}
-","DDCC Country Of Vaccination for Immunization","DDCC Country Of Vaccination for Immunization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Immunization.extension","country","","Country of vaccination",1,1,"Y","","","Extension {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]]} {[]}
+","DDCC Country Of Event for Immunization","DDCC Country Of Event for Immunization","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.extension","validFrom","","Vaccination valid from",0,1,"Y","","","Extension {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom]]} {[]}

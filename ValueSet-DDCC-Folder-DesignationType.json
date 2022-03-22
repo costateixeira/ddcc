@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</code></a></li></ul></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "name": "DDCC_Folder_DesignationType_ValueSet",
   "title": "DDCC DesignationTypes for Folder",
   "status": "active",
-  "date": "2021-12-10T20:06:08+00:00",
+  "date": "2022-03-22T19:58:30+00:00",
   "publisher": "WHO",
   "contact": [
     {

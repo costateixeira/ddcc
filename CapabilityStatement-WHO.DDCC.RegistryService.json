@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a DDCC RegistryService</p>\n         \n    </div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "name": "WHO_DDCC_RegistryService",
   "title": "WHO DDCC Registry Service",
   "status": "draft",

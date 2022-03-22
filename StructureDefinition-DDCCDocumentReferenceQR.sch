@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:DocumentReference</sch:title>
     <sch:rule context="f:DocumentReference">
-      <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:authenticator) &gt;= 1">authenticator: minimum cardinality of 'authenticator' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

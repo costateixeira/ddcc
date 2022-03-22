@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "DDCCQuestionnaire"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire\">Questionnaire</a><a name=\"Questionnaire\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-extr-smap.html\">QuestionnaireExtractStructureMap</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This is an abstract profile<br/><span style=\"opacity: 0.5\">Extractable Questionnaire - StructureMap</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension\">extension</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck05.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension:targetStructureMap\" title=\"Slice targetStructureMap\">extension:targetStructureMap</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-targetStructureMap.html\" title=\"Extension\">TargetStructureMapExtension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Map to artifacts that can be populated from this Questionnaire</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck050.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">extension</span><a name=\"Questionnaire.extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck040.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension:targetStructureMap.valueCanonical\">valueCanonical</a><a name=\"Questionnaire.extension.valueCanonical\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">canonical</a>()</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire\">Questionnaire</a><a name=\"Questionnaire\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-extr-smap.html\">SDCQuestionnaireExtractStructureMap</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This is an abstract profile<br/><span style=\"opacity: 0.5\">Extractable Questionnaire - StructureMap</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension\">extension</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck04.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension:targetStructureMap\" title=\"Slice targetStructureMap\">extension:targetStructureMap</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-targetStructureMap.html\" title=\"Extension\">TargetStructureMapExtension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Map to artifacts that can be populated from this Questionnaire</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:StructureDefinition.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire"];
-  fhir:StructureDefinition.version [ fhir:value "0.2.1"];
+  fhir:StructureDefinition.version [ fhir:value "0.3.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaire"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionniare"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-10T20:06:08+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-22T19:58:30+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -644,12 +644,12 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:is-modular" ];
+       fhir:Element.id [ fhir:value "Questionnaire.extension:assemble-expectation" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "is-modular" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "assemble-expectation" ];
        fhir:ElementDefinition.short [ fhir:value "Questionnaire is modular" ];
-       fhir:ElementDefinition.definition [ fhir:value "If present, indicates that this is a 'modular' questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire.html/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions." ];
-       fhir:ElementDefinition.comment [ fhir:value "SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use." ];
+       fhir:ElementDefinition.definition [ fhir:value "If present, indicates that this questionnaire has expectations with respect to assembly.  Specifically, indicates whether this form requires assembly (i.e. it can't be used directly without invoking the [$assemble](https://build.fhir.org/ig/HL7/sdc/OperationDefinition-Questionnaire-assemble.html) operation operation on it) and/or whether it is intended for use only as a 'child' in an assembly process.  The assembly processs might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions." ];
+       fhir:ElementDefinition.comment [ fhir:value "SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use.  If not declared, then the Questionnaire is not necessarily safe for use as a child form and does not require assembly prior to use." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -661,9 +661,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular";
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular>
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -746,206 +746,6 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.id" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.id" ];
-       fhir:ElementDefinition.representation [
-         fhir:value "xmlAttr";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
-       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
-           fhir:Extension.valueUrl [ fhir:value "string" ]
-         ];
-         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
-     ], [
-       fhir:index 14;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.extension" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "0" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 15;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.url" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.url" ];
-       fhir:ElementDefinition.representation [
-         fhir:value "xmlAttr";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.short [ fhir:value "identifies the meaning of the extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Source of the definition for the extension code - a logical name or a URL." ];
-       fhir:ElementDefinition.comment [ fhir:value "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.url" ];
-         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
-       ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap" ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 16;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.value[x]" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.value[x]" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "type" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "$this" ]
-         ];
-         fhir:ElementDefinition.slicing.ordered [ fhir:value "false"^^xsd:boolean ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "closed" ]
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "canonical" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 17;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.value[x]:valueCanonical" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.value[x]" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "valueCanonical" ];
-       fhir:ElementDefinition.short [ fhir:value "Value of extension" ];
-       fhir:ElementDefinition.definition [ fhir:value "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Extension.value[x]" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "canonical" ]
-       ];
-       fhir:ElementDefinition.patternCanonical [
-         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle";
-         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle>
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 18;
        fhir:Element.id [ fhir:value "Questionnaire.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -1002,7 +802,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 14;
        fhir:Element.id [ fhir:value "Questionnaire.url" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.url" ];
        fhir:ElementDefinition.short [ fhir:value "Canonical identifier for this questionnaire, represented as a URI (globally unique)" ];
@@ -1049,7 +849,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier[scope=BUSN;reliability=ISS]" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 15;
        fhir:Element.id [ fhir:value "Questionnaire.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Additional identifier for the questionnaire" ];
@@ -1099,7 +899,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "no-gen-base" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "Questionnaire.version" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.version" ];
        fhir:ElementDefinition.short [ fhir:value "Business version of the questionnaire" ];
@@ -1149,7 +949,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Not currently in schema" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "Questionnaire.name" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.name" ];
        fhir:ElementDefinition.short [ fhir:value "Name for this questionnaire (computer friendly)" ];
@@ -1191,7 +991,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "Questionnaire.title" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.title" ];
        fhir:ElementDefinition.short [ fhir:value "Name for this questionnaire (human friendly)" ];
@@ -1233,7 +1033,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".title" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "Questionnaire.derivedFrom" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.derivedFrom" ];
        fhir:ElementDefinition.short [ fhir:value "Instantiates protocol or definition" ];
@@ -1279,7 +1079,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=DRIV].target[classCode=OBS, moodCode=DEFN]" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "Questionnaire.status" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.status" ];
        fhir:ElementDefinition.short [ fhir:value "draft | active | retired | unknown" ];
@@ -1347,7 +1147,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./administration_package/registration/state/registration_status" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "Questionnaire.experimental" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.experimental" ];
        fhir:ElementDefinition.short [ fhir:value "For testing purposes, not real usage" ];
@@ -1393,7 +1193,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "Questionnaire.subjectType" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.subjectType" ];
        fhir:ElementDefinition.short [ fhir:value "Resource that can be subject of QuestionnaireResponse" ];
@@ -1453,7 +1253,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=META].target[classCode=OBS, moodCode=DEFN, isCriterion=true].participation.role.classCode" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 23;
        fhir:Element.id [ fhir:value "Questionnaire.date" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.date" ];
        fhir:ElementDefinition.short [ fhir:value "Date last changed" ];
@@ -1502,7 +1302,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=AUT].time" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 24;
        fhir:Element.id [ fhir:value "Questionnaire.publisher" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.publisher" ];
        fhir:ElementDefinition.short [ fhir:value "Name of the publisher (organization or individual)" ];
@@ -1548,7 +1348,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=AUT].role" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Questionnaire.contact" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.contact" ];
        fhir:ElementDefinition.short [ fhir:value "Contact details for the publisher" ];
@@ -1589,7 +1389,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=CALLBCK].role" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Questionnaire.description" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.description" ];
        fhir:ElementDefinition.short [ fhir:value "Natural language description of the questionnaire" ];
@@ -1630,7 +1430,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".text" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Questionnaire.useContext" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.useContext" ];
        fhir:ElementDefinition.short [ fhir:value "The context that the content is intended to support" ];
@@ -1672,7 +1472,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A (to add?)" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Questionnaire.jurisdiction" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.jurisdiction" ];
        fhir:ElementDefinition.short [ fhir:value "Intended jurisdiction for questionnaire (if applicable)" ];
@@ -1730,7 +1530,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A (to add?)" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Questionnaire.purpose" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.purpose" ];
        fhir:ElementDefinition.short [ fhir:value "Why this questionnaire is defined" ];
@@ -1779,7 +1579,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "no-gen-base" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Questionnaire.copyright" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.copyright" ];
        fhir:ElementDefinition.short [ fhir:value "Use and/or publishing restrictions" ];
@@ -1831,7 +1631,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "no-gen-base" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Questionnaire.approvalDate" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.approvalDate" ];
        fhir:ElementDefinition.short [ fhir:value "When the questionnaire was approved by publisher" ];
@@ -1876,7 +1676,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "no-gen-base" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Questionnaire.lastReviewDate" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.lastReviewDate" ];
        fhir:ElementDefinition.short [ fhir:value "When the questionnaire was last reviewed" ];
@@ -1922,7 +1722,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "no-gen-base" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Questionnaire.effectivePeriod" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.effectivePeriod" ];
        fhir:ElementDefinition.short [ fhir:value "When the questionnaire is expected to be used" ];
@@ -1968,7 +1768,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "no-gen-base" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Questionnaire.code" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.code" ];
        fhir:ElementDefinition.short [ fhir:value "Concept that represents the overall questionnaire" ];
@@ -2018,13 +1818,13 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".code" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Questionnaire.item" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item" ];
        fhir:ElementDefinition.short [ fhir:value "Questions and sections within the Questionnaire" ];
        fhir:ElementDefinition.definition [ fhir:value "A particular question, question grouping or display text that is part of the questionnaire." ];
        fhir:ElementDefinition.comment [ fhir:value "The content of the questionnaire is constructed from an ordered, hierarchical collection of items." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "Questionnaire.item" ];
@@ -2173,17 +1973,6 @@
          ]
        ], [
          fhir:index 12;
-         fhir:ElementDefinition.constraint.key [ fhir:value "sdc-2" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "A choiceConstraint is only valid if item has a list of choice options (with an answerValueSet, answerExpression or at least one answerOption listed)." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "choiceConstraint.empty() or (answerValueSet.empty().not() or answerOption.empty().not() or extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression').empty().not)" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(f:choiceConstraint) or ((f:answerValueSet) or (f:answerOption) or (f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression']))" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire";
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
-         ]
-       ], [
-         fhir:index 13;
          fhir:ElementDefinition.constraint.key [ fhir:value "sdc-1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "An item cannot have an answerExpression if answerOption or answerValueSet is already present." ];
@@ -2207,7 +1996,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./form_design/*[self::header or self::footer or self::section]" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Questionnaire.item.id" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.id" ];
        fhir:ElementDefinition.representation [
@@ -2240,7 +2029,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Questionnaire.item.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2291,7 +2080,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Questionnaire.item.extension:designNote" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "designNote" ];
@@ -2344,7 +2133,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Questionnaire.item.extension:terminologyServer" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "terminologyServer" ];
@@ -2397,217 +2186,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45;
-       fhir:Element.id [ fhir:value "Questionnaire.item.extension:answerExpression" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "answerExpression" ];
-       fhir:ElementDefinition.short [ fhir:value "Expression for possible answers" ];
-       fhir:ElementDefinition.definition [ fhir:value "An expression (FHIRPath, CQL or FHIR Query) that resolves to a list of permitted answers for the question item or that establishes context for a group item.  The user may select from among the list to choose answers for the question." ];
-       fhir:ElementDefinition.comment [ fhir:value "This is only permitted when the containing item does NOT have any answerOption or answerValueSet elements. The results of the expression must correspond to the item type of the question the element appears on or must correspond to a resource, backbone element or complex data type for a group item.  Resources are considered a match for the Reference item type.  Quantity can be a match for decimal and integer items so long as a questionnaire-unit extension is present." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression>
-         ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 46;
-       fhir:Element.id [ fhir:value "Questionnaire.item.extension:choiceConstraint" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "choiceConstraint" ];
-       fhir:ElementDefinition.short [ fhir:value "optionsOnly | optionOrType | optionOrString" ];
-       fhir:ElementDefinition.definition [ fhir:value "Controls what the user is allowed to enter as an answer aside from the answer options provided. NOTE: This extension should be moved to core in R5." ];
-       fhir:ElementDefinition.comment [ fhir:value "This element is useful for questions with \"Other\" textbox or comment field. It allows users to either provide an alternative answer (if any of the answer options do not apply to them)  or offer additional information about their choice." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint>
-         ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 47;
-       fhir:Element.id [ fhir:value "Questionnaire.item.extension:UnitOpen" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "UnitOpen" ];
-       fhir:ElementDefinition.short [ fhir:value "Used to denote if user can specify alternate codes" ];
-       fhir:ElementDefinition.definition [ fhir:value "Indicates whether the list of supported units (conveyed in other extensions) are the exhaustive list from which the user must choose or whether they're able to select alternate codes or specify a string." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen>
-         ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 48;
-       fhir:Element.id [ fhir:value "Questionnaire.item.extension:UnitSupplementalSystem" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "UnitSupplementalSystem" ];
-       fhir:ElementDefinition.short [ fhir:value "This extension indicates the code system the additional units are drawn from" ];
-       fhir:ElementDefinition.definition [ fhir:value "If the questionnaire-unit-open extension indicates that additional units other than the set of options provided for the question are allowed, this indicates the code system those units are expected to be drawn from.  This extension SHOULD be present on any question where questionare-unit-open allows additional coded values." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem>
-         ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
-         ]
-       ];
-       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 49;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Questionnaire.item.extension:unit" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "unit" ];
@@ -2662,7 +2241,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A (MIF-level)" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Questionnaire.item.extension:itemHidden" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "itemHidden" ];
@@ -2717,7 +2296,57 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Any element with @initial_state=\"hidden\" and no rule that unhides the element" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 42;
+       fhir:Element.id [ fhir:value "Questionnaire.item.extension:isSubject" ];
+       fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "isSubject" ];
+       fhir:ElementDefinition.short [ fhir:value "Marks that this item identifies a different subject" ];
+       fhir:ElementDefinition.definition [ fhir:value "If present and true, indicates that the item establishes a different subject for the group in a response." ];
+       fhir:ElementDefinition.comment [ fhir:value "The item type must be \"reference\" and there can only be one item with this extension in each group." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Allows the extraction process to leverage the fact that the subject for this group and descendants is distinct" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Questionnaire.item.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2777,7 +2406,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Questionnaire.item.linkId" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.linkId" ];
        fhir:ElementDefinition.short [ fhir:value "Unique id for item in questionnaire" ];
@@ -2820,7 +2449,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./section_identifier" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Questionnaire.item.definition" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.definition" ];
        fhir:ElementDefinition.short [ fhir:value "ElementDefinition - details for the item" ];
@@ -2858,7 +2487,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=INST].target[classCode=OBS, moodCode=DEF]" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Questionnaire.item.code" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.code" ];
        fhir:ElementDefinition.short [ fhir:value "Corresponding concept for this item in a terminology" ];
@@ -2913,7 +2542,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".code" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Questionnaire.item.prefix" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.prefix" ];
        fhir:ElementDefinition.short [ fhir:value "E.g. \"1(a)\", \"2.5.3\"" ];
@@ -2960,7 +2589,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./section_number/label" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Questionnaire.item.text" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.text" ];
        fhir:ElementDefinition.short [ fhir:value "Primary text for the item" ];
@@ -3002,7 +2631,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Form Design/designation[context=\"primary?\"/definition/  ./section_instruction/label" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Questionnaire.item.type" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.type" ];
        fhir:ElementDefinition.short [ fhir:value "group | display | boolean | decimal | integer | date | dateTime +" ];
@@ -3058,7 +2687,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./*/datatype" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen" ];
        fhir:ElementDefinition.short [ fhir:value "Only allow data when" ];
@@ -3093,7 +2722,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "If the operator is 'exists', the value must be a boolean" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "operator = 'exists' implies (answer is Boolean)" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "If enableWhen is present and the condition evaluates to false, then the Questionnaire behaves as though the elements weren't actually present" ];
@@ -3104,7 +2737,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen.id" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen.id" ];
        fhir:ElementDefinition.representation [
@@ -3137,7 +2770,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3192,7 +2825,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3252,7 +2885,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen.question" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen.question" ];
        fhir:ElementDefinition.short [ fhir:value "Question that determines whether item is enabled" ];
@@ -3289,7 +2922,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen.operator" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen.operator" ];
        fhir:ElementDefinition.short [ fhir:value "exists | = | != | > | < | >= | <=" ];
@@ -3338,7 +2971,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableWhen.answer[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableWhen.answer[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Value for question comparison based on operator" ];
@@ -3423,7 +3056,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Questionnaire.item.enableBehavior" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.enableBehavior" ];
        fhir:ElementDefinition.short [ fhir:value "all | any" ];
@@ -3477,7 +3110,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Questionnaire.item.required" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.required" ];
        fhir:ElementDefinition.short [ fhir:value "Whether the item must be included in data results" ];
@@ -3524,7 +3157,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./cardinality/minimum!=0" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Questionnaire.item.repeats" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.repeats" ];
        fhir:ElementDefinition.short [ fhir:value "Whether the item may repeat" ];
@@ -3572,7 +3205,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./cardinality/maximum!=1" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Questionnaire.item.readOnly" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.readOnly" ];
        fhir:ElementDefinition.short [ fhir:value "Don't allow human editing" ];
@@ -3619,7 +3252,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./*_Field/default_value_read_only  ./default_element/read_only" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Questionnaire.item.maxLength" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.maxLength" ];
        fhir:ElementDefinition.short [ fhir:value "No more than this many characters" ];
@@ -3669,7 +3302,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./*_Field/maximum_character_quantity | ./*_Field/datatype/string/maximum_characters" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerValueSet" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerValueSet" ];
        fhir:ElementDefinition.short [ fhir:value "Valueset containing permitted answers" ];
@@ -3723,7 +3356,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./list_field | ./lookup_field/endpoint" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerOption" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerOption" ];
        fhir:ElementDefinition.short [ fhir:value "Permitted answer" ];
@@ -3768,7 +3401,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerOption.id" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerOption.id" ];
        fhir:ElementDefinition.representation [
@@ -3801,7 +3434,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerOption.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerOption.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3856,7 +3489,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerOption.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerOption.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3916,7 +3549,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerOption.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerOption.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Answer value" ];
@@ -3986,7 +3619,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Questionnaire.item.answerOption.initialSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.answerOption.initialSelected" ];
        fhir:ElementDefinition.short [ fhir:value "Whether option is selected by default" ];
@@ -4024,7 +3657,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Questionnaire.item.initial" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.initial" ];
        fhir:ElementDefinition.short [ fhir:value "Initial value(s) when item is first rendered" ];
@@ -4070,7 +3703,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A - MIF rather than RIM level" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Questionnaire.item.initial.id" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.initial.id" ];
        fhir:ElementDefinition.representation [
@@ -4103,7 +3736,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Questionnaire.item.initial.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.initial.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4158,7 +3791,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Questionnaire.item.initial.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.initial.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4218,7 +3851,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Questionnaire.item.initial.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.initial.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Actual value for initializing the question" ];
@@ -4311,7 +3944,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./default_value  ./default_element/default/value  ./default_element/list_item_identifier (resolve)" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Questionnaire.item.item" ];
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.item.item" ];
        fhir:ElementDefinition.short [ fhir:value "Nested questionnaire items" ];
@@ -4372,21 +4005,6 @@
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "targetStructureMap" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
-     ], [
-       fhir:index 3;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.extension" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.extension" ];
-       fhir:ElementDefinition.max [ fhir:value "0" ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "Questionnaire.extension:targetStructureMap.valueCanonical" ];
-       fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension.valueCanonical" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.patternCanonical [
-         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle";
-         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle>
-       ]
      ]
   ] .
 

@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ddcc<a name="DDCC-Folder-DesignationType-ddcc"> </a></td><td>DDCC</td></tr></table></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType"/>
-  <version value="0.2.1"/>
+  <version value="0.3.1"/>
   <name value="DDCC_Folder_DesignationType_Codesystem"/>
   <title value="DDCC Designation Types for Folder"/>
   <status value="active"/>
-  <date value="2021-12-10T20:06:08+00:00"/>
+  <date value="2022-03-22T19:58:30+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
