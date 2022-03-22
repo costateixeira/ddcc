@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>TODO</p>\n</div></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "name": "ddccvs",
-  "title": "WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS)",
+  "title": "WHO Digital Documentation of COVID-19 Certificates (DDCC)",
   "status": "draft",
-  "date": "2021-06-03",
+  "date": "2021-11-12",
   "publisher": "WHO",
   "contact": [
     {
@@ -307,23 +307,35 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      }
-    ],
-    "resource": [
+      },
       {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
           }
         ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCAddBundle"
-        },
-        "name": "DDCC Add Bundle",
-        "description": "Bundle to be transformed to from the DDCC QuestionnaireResponse\nto add on the DDCC generator.",
-        "exampleBoolean": false
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
       {
         "extension": [
           {
@@ -336,6 +348,20 @@
         },
         "name": "DDCC Composition",
         "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC).  ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCDiagnosticReport"
+        },
+        "name": "DDCC Diagnostic Report",
+        "description": "A DDCC Diagnostic Report contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) DiagnosticReport resouce, this is intended to map into an IPS \nDiagnosticReport resource.",
         "exampleBoolean": false
       },
       {
@@ -388,6 +414,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCDocumentSigned"
+        },
+        "name": "DDCC DocumentSigned",
+        "description": "A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC\nthat has a digital signature.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCFolder"
         },
         "name": "DDCC Folder",
@@ -416,6 +456,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCGenerateHealthFolderParameters"
+        },
+        "name": "DDCC Generate Health Folder Parameters",
+        "description": "Parameters for the [DDCC Generate Health Folder Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCImmunization"
         },
         "name": "DDCC Immunization",
@@ -434,6 +488,20 @@
         },
         "name": "DDCC Immunization Recommendation",
         "description": "A DDCC Immunization Recommendation contains the content corresponding to when\na patient should return for a booster shot.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCObservation"
+        },
+        "name": "DDCC Observation",
+        "description": "A DDCC Observation contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Observation resouce, this is intended to map into an IPS \nObservation resource.",
         "exampleBoolean": false
       },
       {
@@ -500,6 +568,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCProcedure"
+        },
+        "name": "DDCC Procedure",
+        "description": "A DDCC Procedure contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Procedure resouce, this is intended to map into an IPS \nProcedure resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCProvideDocumentBundle"
         },
         "name": "DDCC Provide Document Bundle",
@@ -556,6 +638,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCRevokeHealthCertificateParameters"
+        },
+        "name": "DDCC Revoke Health Certificate Parameters",
+        "description": "Parameters for the [DDCC Revoke Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCSpecimen"
+        },
+        "name": "DDCC Specimen",
+        "description": "A DDCC Specimen contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Specimen resouce, this is intended to map into an IPS \nSpecimen resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCSubmissionSet"
         },
         "name": "DDCC Submission Set",
@@ -594,14 +704,112 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCCountryOfVaccination"
+          "reference": "StructureDefinition/DDCCTRComposition"
         },
-        "name": "DDCC Country Of Vaccination for Immunization",
-        "description": "DDCC Country Of Vaccination for Immunization",
+        "name": "DDCC:TR Composition",
+        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Results\n(DDCC:TR).  ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTRDocument"
+        },
+        "name": "DDCC:VS Document",
+        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTRDocumentSigned"
+        },
+        "name": "DDCC:TR DocumentSigned",
+        "description": "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTest"
+        },
+        "name": "DDCC Test",
+        "description": "A DDCC Test contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Device resouce, this is intended to map into an IPS \nDevice resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSAddBundle"
+        },
+        "name": "DDCC:VS Add Bundle",
+        "description": "Bundle to be transformed to from the DDCC:VS QuestionnaireResponse\nto add on the DDCC generator.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSComposition"
+        },
+        "name": "DDCC:VS Composition",
+        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status\n(DDCC:VS).  ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSDocument"
+        },
+        "name": "DDCC:VS Document",
+        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSDocumentSigned"
+        },
+        "name": "DDCC:VS DocumentSigned",
+        "description": "A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS\nthat has a digital signature.\n",
         "exampleBoolean": false
       },
       {
@@ -612,10 +820,24 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCVaccineBrand"
+          "reference": "StructureDefinition/DDCCCountryOfEvent"
         },
-        "name": "DDCC Vaccine Brand for Immunization",
-        "description": "DDCC Vaccine Brand for Immunization",
+        "name": "DDCC Country Of Event for Immunization",
+        "description": "DDCC Country Of Event for Immunization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCEventBrand"
+        },
+        "name": "DDCC Event Brand for Immunization",
+        "description": "DDCC Event Brand for Immunization",
         "exampleBoolean": false
       },
       {
@@ -664,14 +886,28 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
+            "valueString": "StructureDefinition:logical:abstract"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCCoreDataSetCoC"
+          "reference": "StructureDefinition/DDCCCoreDataSet.TR"
         },
-        "name": "DDCC Core Data Set Logical Model - Continuity of Care",
-        "description": "Data elements for the DDCC Core Data Set - Continuity of Care.",
+        "name": "DDCC Core Data Set Logical Model for Test Results",
+        "description": "Data elements for the DDCC Core Data Set for Test Results.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCoreDataSet.VS"
+        },
+        "name": "DDCC Core Data Set Logical Model for Vaccine Status",
+        "description": "Data elements for the DDCC Core Data Set for Vaccine Status.",
         "exampleBoolean": false
       },
       {
@@ -682,10 +918,52 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCCoreDataSetPoV"
+          "reference": "StructureDefinition/DDCCCoreDataSet.VS.CoC"
         },
-        "name": "DDCC Core Data Set Logical Model - Proof of Vaccination",
-        "description": "Data elements for the DDCC Core Data Set - Proof of Vaccination.",
+        "name": "DDCC Core Data Set Logical Model - Vaccine Status - Continuity of Care",
+        "description": "Data elements for the DDCC Core Data Set - Vaccine Status - Continuity of Care.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCoreDataSet.VS.PoV"
+        },
+        "name": "DDCC Core Data Set Logical Model - Vaccine Status - Proof of Vaccination",
+        "description": "Data elements for the DDCC Core Data Set - Vaccine Status - Proof of Vaccination.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-Composition-Category-ValueSet"
+        },
+        "name": "DDCC Composition Category Codes",
+        "description": "Categorization of DDCC Composition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-Device-Property-ValueSet"
+        },
+        "name": "DDCC Device Property Codes",
+        "description": "Properties of DDCC devices",
         "exampleBoolean": false
       },
       {
@@ -710,10 +988,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/DDCC-QR-Category-Usage-ValueSet"
+          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
         },
-        "name": "DDCC QR Category Usage Codes",
-        "description": "Categorization of QR codes by their business usage",
+        "name": "DDCC QR Format Codes",
+        "description": "Format of the representation of QR code",
         "exampleBoolean": false
       },
       {
@@ -724,10 +1002,24 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
+          "reference": "ValueSet/DDCC-QR-Type-ValueSet"
         },
-        "name": "DDCC QR Format Codes",
-        "description": "Format of the representation of QR code",
+        "name": "DDCC QR Type Codes",
+        "description": "Type of QR codes by their business usage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-agent-targeted-covid-19"
+        },
+        "name": "WHO Agent Targeted (COVID-19)",
+        "description": "WHO Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
         "exampleBoolean": false
       },
       {
@@ -752,10 +1044,80 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/who-ddcc-sample-origin-covid-19"
+        },
+        "name": "WHO Speciman Sample Origin (COVID-19)",
+        "description": "WHO Speciman Sample Origin List (COVID-19)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-test-result-covid-19"
+        },
+        "name": "WHO Test Result (COVID-19)",
+        "description": "WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-type-of-test-covid-19"
+        },
+        "name": "WHO Type of Covid-19 Test",
+        "description": "WHO Type of COVID-19 Test",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/who-ddcc-vaccines-covid-19"
         },
         "name": "WHO Vaccine List (COVID-19)",
         "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-Composition-Category-CodeSystem"
+        },
+        "name": "DDCC Composition Category Codes",
+        "description": "Possible categories available for composition.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-Device-Property-CodeSystem"
+        },
+        "name": "DDCC Device Property Codes",
+        "description": "Possible properties available for devices.",
         "exampleBoolean": false
       },
       {
@@ -794,10 +1156,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/DDCC-QR-Category-Usage-CodeSystem"
+          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
         },
-        "name": "DDCC QR Category Usage Codes",
-        "description": "Possible formats available for QR usage.",
+        "name": "DDCC QR Format Codes",
+        "description": "Possible formats available for QR data.",
         "exampleBoolean": false
       },
       {
@@ -808,10 +1170,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
+          "reference": "CodeSystem/DDCC-QR-Type-CodeSystem"
         },
-        "name": "DDCC QR Format Codes",
-        "description": "Possible formats available for QR data.",
+        "name": "DDCC QR Category Usage Codes",
+        "description": "Possible formats available for QR usage.",
         "exampleBoolean": false
       },
       {
@@ -825,7 +1187,7 @@
           "reference": "Composition/DDCC-Composition-Example-Arabic"
         },
         "name": "DDCC-Composition-Example-Arabic",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -838,7 +1200,7 @@
           "reference": "Composition/DDCC-Composition-Example-Chinese"
         },
         "name": "DDCC-Composition-Example-Chinese",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -851,7 +1213,7 @@
           "reference": "Composition/DDCC-Composition-Example-English"
         },
         "name": "DDCC-Composition-Example-English",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -864,7 +1226,7 @@
           "reference": "Composition/DDCC-Composition-Example-French"
         },
         "name": "DDCC-Composition-Example-French",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -877,7 +1239,7 @@
           "reference": "Composition/DDCC-Composition-Example-Russian"
         },
         "name": "DDCC-Composition-Example-Russian",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -890,7 +1252,7 @@
           "reference": "Composition/DDCC-Composition-Example-Spanish"
         },
         "name": "DDCC-Composition-Example-Spanish",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1222,6 +1584,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"
+        },
+        "name": "DDCCGenerateHealthFolder",
+        "description": "Generate a DDCC Folder from an IPS Bundle.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate"
+        },
+        "name": "DDCCRevokeHealthCertificate",
+        "description": "Revoke a DDCC Document.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -1396,6 +1786,20 @@
           }
         ],
         "reference": {
+          "reference": "Questionnaire/DDCCTRCoreDataSetQuestionnaire"
+        },
+        "name": "DDCCTRCoreDataSetQuestionnaire",
+        "description": "DDCC Questionnaire for a Test event.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
           "reference": "Questionnaire/DDCCVSCoreDataSetQuestionnaire"
         },
         "name": "DDCCVSCoreDataSetQuestionnaire",
@@ -1413,7 +1817,7 @@
           "reference": "Bundle/Example-Arabic"
         },
         "name": "Example-Arabic",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1426,7 +1830,7 @@
           "reference": "Bundle/Example-Chinese"
         },
         "name": "Example-Chinese",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1439,7 +1843,7 @@
           "reference": "Bundle/Example-English"
         },
         "name": "Example-English",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1452,7 +1856,7 @@
           "reference": "Bundle/Example-French"
         },
         "name": "Example-French",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1465,7 +1869,7 @@
           "reference": "Bundle/Example-Russian"
         },
         "name": "Example-Russian",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1478,7 +1882,7 @@
           "reference": "Bundle/Example-Spanish"
         },
         "name": "Example-Spanish",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1492,6 +1896,20 @@
         },
         "name": "WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted",
         "description": "Mapping from ICD-11 to ICD-10 for COVID-19 disease.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-agent-targeted"
+        },
+        "name": "WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted",
+        "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted",
         "exampleBoolean": false
       },
       {
@@ -1516,10 +1934,51 @@
           }
         ],
         "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-test-result"
+        },
+        "name": "WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
+        "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
         },
         "name": "WHO_DDCC_Map_ICD11_to_SCT_Vaccines",
         "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-loinc-sct-type-of-test"
+        },
+        "name": "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
+        "description": "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/IPS-Immunization-Example-Bundle-01"
+        },
+        "name": "IPS-Immunization-Example-Bundle-01",
         "exampleBoolean": false
       },
       {
@@ -1576,6 +2035,165 @@
         },
         "name": "Patient (IPS)",
         "description": "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/HC1"
+        },
+        "name": "EU DCC",
+        "description": "EU Digital Covid Certificate",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/t"
+        },
+        "name": "Test Group",
+        "description": "Test Group",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/v"
+        },
+        "name": "Vaccination Group",
+        "description": "Vaccination Group",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/CoreDataSetLibrary"
+        },
+        "name": "CoreDataSetLibrary",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/CoreDataSetVSLibrary"
+        },
+        "name": "CoreDataSetVSLibrary",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/CoreDataSetVSToAddBundle"
+        },
+        "name": "CoreDataSetVSToAddBundle",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/DDCCtoCoredataset"
+        },
+        "name": "DDCCtoCoredataset",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/DDCCtoEUdcc"
+        },
+        "name": "DDCCtoEUdcc",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/QRespToVSCoreDataSet"
+        },
+        "name": "QRespToVSCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/ResourcesToCoreDataSet"
+        },
+        "name": "ResourcesToCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/ResourcesToVSCoreDataSet"
+        },
+        "name": "ResourcesToVSCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/svc-map-qr-uvci-bundle"
+        },
+        "name": "svc-map-qr-uvci-bundle",
         "exampleBoolean": false
       }
     ],
@@ -1650,6 +2268,11 @@
           "generation": "html"
         },
         {
+          "nameUrl": "functionalrequirements.html",
+          "title": "Functionalrequirements",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "maps.html",
           "title": "Maps",
           "generation": "html"
@@ -1682,11 +2305,6 @@
         {
           "nameUrl": "transactions.html",
           "title": "Transactions",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "transactions.20210702.html",
-          "title": "Transactions 20210702",
           "generation": "html"
         },
         {

@@ -3,14 +3,14 @@
   "id": "DDCCQuestionnaire",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire\">Questionnaire</a><a name=\"Questionnaire\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-extr-smap.html\">QuestionnaireExtractStructureMap</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This is an abstract profile<br/><span style=\"opacity: 0.5\">Extractable Questionnaire - StructureMap</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension\">extension</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck05.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension:targetStructureMap\" title=\"Slice targetStructureMap\">extension:targetStructureMap</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-targetStructureMap.html\" title=\"Extension\">TargetStructureMapExtension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Map to artifacts that can be populated from this Questionnaire</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck050.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <span style=\"text-decoration:line-through\">extension</span><a name=\"Questionnaire.extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"text-decoration:line-through\"/><span style=\"text-decoration:line-through\">0</span><span style=\"text-decoration:line-through\">..</span><span style=\"text-decoration:line-through\">0</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck040.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension:targetStructureMap.valueCanonical\">valueCanonical</a><a name=\"Questionnaire.extension.valueCanonical\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">canonical</a>()</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire\">Questionnaire</a><a name=\"Questionnaire\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-extr-smap.html\">SDCQuestionnaireExtractStructureMap</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This is an abstract profile<br/><span style=\"opacity: 0.5\">Extractable Questionnaire - StructureMap</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension\">extension</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck04.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaire-definitions.html#Questionnaire.extension:targetStructureMap\" title=\"Slice targetStructureMap\">extension:targetStructureMap</a><a name=\"Questionnaire.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-targetStructureMap.html\" title=\"Extension\">TargetStructureMapExtension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Map to artifacts that can be populated from this Questionnaire</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "name": "DDCCQuestionnaire",
   "title": "DDCC Questionniare",
   "status": "active",
-  "date": "2021-12-10T20:06:08+00:00",
+  "date": "2022-03-22T19:58:30+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -576,12 +576,12 @@
         "isModifier": false
       },
       {
-        "id": "Questionnaire.extension:is-modular",
+        "id": "Questionnaire.extension:assemble-expectation",
         "path": "Questionnaire.extension",
-        "sliceName": "is-modular",
+        "sliceName": "assemble-expectation",
         "short": "Questionnaire is modular",
-        "definition": "If present, indicates that this is a 'modular' questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire.html/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions.",
-        "comment": "SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use.",
+        "definition": "If present, indicates that this questionnaire has expectations with respect to assembly.  Specifically, indicates whether this form requires assembly (i.e. it can't be used directly without invoking the [$assemble](https://build.fhir.org/ig/HL7/sdc/OperationDefinition-Questionnaire-assemble.html) operation operation on it) and/or whether it is intended for use only as a 'child' in an assembly process.  The assembly processs might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions.",
+        "comment": "SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use.  If not declared, then the Questionnaire is not necessarily safe for use as a child form and does not require assembly prior to use.",
         "min": 0,
         "max": "1",
         "base": {
@@ -593,7 +593,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular"
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation"
             ]
           }
         ],
@@ -663,204 +663,6 @@
         "mustSupport": true,
         "isModifier": false,
         "isSummary": false
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.id",
-        "path": "Questionnaire.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "Unique id for inter-element referencing",
-        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
-              }
-            ],
-            "code": "http://hl7.org/fhirpath/System.String"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.extension",
-        "path": "Questionnaire.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Extension",
-        "definition": "An Extension",
-        "min": 0,
-        "max": "0",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.url",
-        "path": "Questionnaire.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "identifies the meaning of the extension",
-        "definition": "Source of the definition for the extension code - a logical name or a URL.",
-        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.url",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap",
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.value[x]",
-        "path": "Questionnaire.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "closed"
-        },
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "canonical"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.value[x]:valueCanonical",
-        "path": "Questionnaire.extension.value[x]",
-        "sliceName": "valueCanonical",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "canonical"
-          }
-        ],
-        "patternCanonical": "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle",
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
       },
       {
         "id": "Questionnaire.modifierExtension",
@@ -1920,7 +1722,7 @@
         "short": "Questions and sections within the Questionnaire",
         "definition": "A particular question, question grouping or display text that is part of the questionnaire.",
         "comment": "The content of the questionnaire is constructed from an ordered, hierarchical collection of items.",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "base": {
           "path": "Questionnaire.item",
@@ -2031,14 +1833,6 @@
             "expression": "repeats=true or initial.count() <= 1",
             "xpath": "f:repeats/@value='true' or count(f:initial)<=1",
             "source": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
-          },
-          {
-            "key": "sdc-2",
-            "severity": "error",
-            "human": "A choiceConstraint is only valid if item has a list of choice options (with an answerValueSet, answerExpression or at least one answerOption listed).",
-            "expression": "choiceConstraint.empty() or (answerValueSet.empty().not() or answerOption.empty().not() or extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression').empty().not)",
-            "xpath": "not(f:choiceConstraint) or ((f:answerValueSet) or (f:answerOption) or (f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression']))",
-            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
           },
           {
             "key": "sdc-1",
@@ -2239,188 +2033,6 @@
         "isModifier": false
       },
       {
-        "id": "Questionnaire.item.extension:answerExpression",
-        "path": "Questionnaire.item.extension",
-        "sliceName": "answerExpression",
-        "short": "Expression for possible answers",
-        "definition": "An expression (FHIRPath, CQL or FHIR Query) that resolves to a list of permitted answers for the question item or that establishes context for a group item.  The user may select from among the list to choose answers for the question.",
-        "comment": "This is only permitted when the containing item does NOT have any answerOption or answerValueSet elements. The results of the expression must correspond to the item type of the question the element appears on or must correspond to a resource, backbone element or complex data type for a group item.  Resources are considered a match for the Reference item type.  Quantity can be a match for decimal and integer items so long as a questionnaire-unit extension is present.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "mustSupport": true,
-        "isModifier": false
-      },
-      {
-        "id": "Questionnaire.item.extension:choiceConstraint",
-        "path": "Questionnaire.item.extension",
-        "sliceName": "choiceConstraint",
-        "short": "optionsOnly | optionOrType | optionOrString",
-        "definition": "Controls what the user is allowed to enter as an answer aside from the answer options provided. NOTE: This extension should be moved to core in R5.",
-        "comment": "This element is useful for questions with \"Other\" textbox or comment field. It allows users to either provide an alternative answer (if any of the answer options do not apply to them)  or offer additional information about their choice.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "mustSupport": true,
-        "isModifier": false
-      },
-      {
-        "id": "Questionnaire.item.extension:UnitOpen",
-        "path": "Questionnaire.item.extension",
-        "sliceName": "UnitOpen",
-        "short": "Used to denote if user can specify alternate codes",
-        "definition": "Indicates whether the list of supported units (conveyed in other extensions) are the exhaustive list from which the user must choose or whether they're able to select alternate codes or specify a string.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false
-      },
-      {
-        "id": "Questionnaire.item.extension:UnitSupplementalSystem",
-        "path": "Questionnaire.item.extension",
-        "sliceName": "UnitSupplementalSystem",
-        "short": "This extension indicates the code system the additional units are drawn from",
-        "definition": "If the questionnaire-unit-open extension indicates that additional units other than the set of options provided for the question are allowed, this indicates the code system those units are expected to be drawn from.  This extension SHOULD be present on any question where questionare-unit-open allows additional coded values.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem"
-            ]
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "mustSupport": false,
-        "isModifier": false
-      },
-      {
         "id": "Questionnaire.item.extension:unit",
         "path": "Questionnaire.item.extension",
         "sliceName": "unit",
@@ -2519,6 +2131,50 @@
             "map": "Any element with @initial_state=\"hidden\" and no rule that unhides the element"
           }
         ]
+      },
+      {
+        "id": "Questionnaire.item.extension:isSubject",
+        "path": "Questionnaire.item.extension",
+        "sliceName": "isSubject",
+        "short": "Marks that this item identifies a different subject",
+        "definition": "If present and true, indicates that the item establishes a different subject for the group in a response.",
+        "comment": "The item type must be \"reference\" and there can only be one item with this extension in each group.",
+        "requirements": "Allows the extraction process to leverage the fact that the subject for this group and descendants is distinct",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false
       },
       {
         "id": "Questionnaire.item.modifierExtension",
@@ -2880,7 +2536,8 @@
             "severity": "error",
             "human": "If the operator is 'exists', the value must be a boolean",
             "expression": "operator = 'exists' implies (answer is Boolean)",
-            "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)"
+            "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap"
           }
         ],
         "isModifier": true,
@@ -4091,18 +3748,6 @@
         "path": "Questionnaire.extension",
         "sliceName": "targetStructureMap",
         "min": 1
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.extension",
-        "path": "Questionnaire.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Questionnaire.extension:targetStructureMap.valueCanonical",
-        "path": "Questionnaire.extension.valueCanonical",
-        "min": 0,
-        "max": "1",
-        "patternCanonical": "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle"
       }
     ]
   }

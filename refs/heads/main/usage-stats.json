@@ -1,20 +1,20 @@
 {
   "package": "fhir.who.ddcc-vs",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
-      "title": "DDCC Country Of Vaccination for Immunization",
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent",
+      "title": "DDCC Country Of Event for Immunization",
       "types": [
         "code",
         "code"
       ]
     },
     {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
-      "title": "DDCC Vaccine Brand for Immunization",
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand",
+      "title": "DDCC Event Brand for Immunization",
       "types": [
         "Coding",
         "Coding"
@@ -50,20 +50,26 @@
         "title": "DDCC Patient"
       }
     ],
-    "Bundle": [
-      {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest",
-        "title": "DDCC Submit Health Event Request"
-      },
-      {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse",
-        "title": "DDCC Submit Health Event Response"
-      }
-    ],
     "Composition": [
       {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
-        "title": "DDCC Composition"
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition",
+        "title": "DDCC:VS Composition"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport",
+        "title": "DDCC Diagnostic Report"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument",
+        "title": "DDCC:VS Document"
+      },
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocumentSigned",
+        "title": "DDCC:VS DocumentSigned"
       }
     ],
     "DocumentReference": [
@@ -84,14 +90,20 @@
     ],
     "Parameters": [
       {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters",
-        "title": "DDCC Generate Health Certificate Parameters"
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCRevokeHealthCertificateParameters",
+        "title": "DDCC Revoke Health Certificate Parameters"
       }
     ],
     "ImmunizationRecommendation": [
       {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation",
         "title": "DDCC Immunization Recommendation"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation",
+        "title": "DDCC Observation"
       }
     ],
     "Organization": [
@@ -112,6 +124,12 @@
         "title": "DDCC Practitioner Role"
       }
     ],
+    "Procedure": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProcedure",
+        "title": "DDCC Procedure"
+      }
+    ],
     "Questionnaire": [
       {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC",
@@ -123,6 +141,18 @@
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse",
         "title": "DDCC Questionnaire Response"
       }
+    ],
+    "Specimen": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSpecimen",
+        "title": "DDCC Specimen"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest",
+        "title": "DDCC Test"
+      }
     ]
   },
   "usage": {
@@ -130,7 +160,10 @@
       "Questionnaire"
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
-      "Immunization.occurrence[x]"
+      "DiagnosticReport.effective[x]",
+      "Immunization.occurrence[x]",
+      "Observation.effective[x]",
+      "Procedure.performed[x]"
     ],
     "http://hl7.org/fhir/StructureDefinition/designNote": [
       "Questionnaire",
@@ -181,6 +214,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
@@ -210,8 +246,8 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression": [
-      "Questionnaire.item"
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation": [
+      "Questionnaire"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-candidateExpression": [
       "Questionnaire.item"
@@ -220,17 +256,14 @@
       "Questionnaire.item",
       "Questionnaire.item.extension"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint": [
-      "Questionnaire.item"
-    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-contextExpression": [
       "Questionnaire.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
       "Questionnaire.item"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular": [
-      "Questionnaire"
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject": [
+      "Questionnaire.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia": [
       "QuestionnaireResponse.item.answer"
@@ -260,12 +293,6 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap": [
       "Questionnaire"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen": [
-      "Questionnaire.item"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem": [
-      "Questionnaire.item"
-    ],
     "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [
       "List.source"
     ],
@@ -278,11 +305,12 @@
     "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId": [
       "List"
     ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination": [
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent": [
       "Bundle.entry.resource",
-      "Immunization"
+      "Immunization",
+      "Procedure"
     ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand": [
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand": [
       "Bundle.entry.resource",
       "Immunization"
     ],

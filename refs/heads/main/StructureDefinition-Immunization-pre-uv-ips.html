@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.29"}
-    h3,h4,h5,h6{--heading-prefix:"24.29"}</style>
+    <style type="text/css">h2{--heading-prefix:"24.51"}
+    h3,h4,h5,h6{--heading-prefix:"24.51"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -54,7 +54,17 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS)</span><br/>0.2.1 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
+            <br/>
+            <span style="display:inline-block;">0.3.1 - CI Build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -75,12 +85,7 @@
             <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
-	<li>
-	  <a href="index.html">Narrative</a>
-	  <ul class="dropdown-menu">
-	    <li><a href="references.html">References</a></li>
-	  </ul>
-	</li>
+	
   <!-- <li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
@@ -92,6 +97,17 @@
 
 	</li> -->
 	<li class="dropdown">
+		<a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="index.html">Summary</a></li>
+			<li><a href="changes.html">Changes</a></li>
+			<li><a href="dependencies.html">Dependencies</a></li>
+			<li><a href="references.html">References</a></li>
+		</ul>
+	</li>
+	
+	<li class="dropdown">
 		<a data-toggle="dropdown" href="requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
@@ -99,7 +115,6 @@
 		  <li><a href="functional.html">Functional Requirements</a></li>    
 		  <li><a href="usecases.html">Use Cases</a></li>
 		  <li><a href="dictionary.html">Data Dictionary</a></li>
-
 		</ul>
 	</li>
 
@@ -107,7 +122,6 @@
 		<a data-toggle="dropdown" href="data_exchange.html" class="dropdown-toggle">Data Models and Exchange<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
-		  <li><a href="dependencies.html">Dependencies</a></li>
 		  <li><a href="actors.html">Actors</a></li>
 		  <li><a href="transactions.html">Transactions</a></li>
 		  <li><a href="workflows.html">Workflows</a></li>
@@ -155,8 +169,9 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
+
 
 
 
@@ -217,27 +232,66 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">Resource Profile: Immunization (IPS)</h2>
+  <h2 id="root">Resource Profile:
 
-<table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips</td></tr>
- <tr><td>Version:</td><td>0.2.1</td></tr>
- <tr><td>Name:</td><td>ImmunizationUvIps</td></tr>
- <tr><td>Title:</td><td>Immunization (IPS)</td></tr>
- <tr><td>Status:</td><td>Active as of 10/4/21, 2:09 PM</td></tr>
- <tr><td>Definition:</td><td><p>This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.</p>
+    Immunization (IPS)
+
+
+
+
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips<button data-clipboard-text="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.3.1<button data-clipboard-text="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips|0.3.1" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2021-10-04
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ImmunizationUvIps</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.</p>
+
 <p>It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party.</p>
-</td></tr>
- <tr><td>Publisher:</td><td>WHO</td></tr>
- <tr><td>Source Resource:</td><td><a href="StructureDefinition-Immunization-pre-uv-ips.profile.xml.html">XML</a> / <a href="StructureDefinition-Immunization-pre-uv-ips.profile.json.html">JSON</a> / <a href="StructureDefinition-Immunization-pre-uv-ips.profile.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+
+</p>
+
+<p>
+<p>This profile constrains the representation of a record of a vaccination of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International.</p>
+
+</p>
 
 
-  <p>
-  The official URL for this profile is:
-  </p>
-  <pre>http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips</pre>
 
   <!-- insert intro if present -->
 
@@ -1094,94 +1148,96 @@ The type is the Canonical URL of Resource Definition that is the type this refer
       <!-- Constraints  heading in the fragment -->
     <h4>Constraints</h4>
 <table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>dom-2</td><td>Immunization</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>Immunization</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>Immunization</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>Immunization</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>Immunization</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.statusReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.vaccineCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.vaccineCode:vaccineGPSCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.vaccineCode:atcClass</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.vaccineCode:absentOrUnknownImmunization</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.patient</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.patient.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.patient.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.patient.reference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.patient.type</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.patient.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.patient.display</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.encounter</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.occurrence[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.occurrence[x].extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.occurrence[x].extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.occurrence[x].extension:data-absent-reason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.occurrence[x].extension:data-absent-reason</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.recorded</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.primarySource</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reportOrigin</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.manufacturer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.lotNumber</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.expirationDate</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.site</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.route</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.doseQuantity</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.performer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.performer.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.performer.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.performer.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.performer.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.performer.function</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.performer.actor</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.note</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reasonCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reasonReference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.isSubpotent</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.subpotentReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>imm-1</td><td>Immunization.education</td><td>One of documentType or reference SHALL be present<br/>: documentType.exists() or reference.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.education.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.education.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education.documentType</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education.reference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education.publicationDate</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.education.presentationDate</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.programEligibility</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.fundingSource</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reaction</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reaction.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.reaction.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reaction.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.reaction.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reaction.date</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reaction.detail</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.reaction.reported</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.protocolApplied.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>Immunization.protocolApplied.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.series</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.authority</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.targetDisease</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.targetDisease:targetDiseaseGPSCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.doseNumber[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>Immunization.protocolApplied.seriesDoses[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Immunization</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Immunization</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Immunization</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Immunization</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>Best Practice</td><td>Immunization</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.text</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.statusReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.vaccineCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.vaccineCode:vaccineGPSCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.vaccineCode:atcClass</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.vaccineCode:absentOrUnknownImmunization</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.patient</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.patient.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.patient.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.patient.reference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.patient.type</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.patient.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.patient.display</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.encounter</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.occurrence[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.occurrence[x].extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.occurrence[x].extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.occurrence[x].extension:data-absent-reason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.occurrence[x].extension:data-absent-reason</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.recorded</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.primarySource</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reportOrigin</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.manufacturer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.lotNumber</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.expirationDate</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.site</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.route</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.doseQuantity</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.performer</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.performer.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.performer.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.performer.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.performer.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.performer.function</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.performer.actor</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.note</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reasonCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reasonReference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.isSubpotent</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.subpotentReason</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>imm-1</td><td>error</td><td>Immunization.education</td><td>One of documentType or reference SHALL be present<br/>: documentType.exists() or reference.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.education.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.education.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education.documentType</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education.reference</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education.publicationDate</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.education.presentationDate</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.programEligibility</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.fundingSource</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reaction</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reaction.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.reaction.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reaction.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.reaction.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reaction.date</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reaction.detail</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.reaction.reported</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.protocolApplied.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>Immunization.protocolApplied.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.series</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.authority</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.targetDisease</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.targetDisease:targetDiseaseGPSCode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.doseNumber[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>Immunization.protocolApplied.seriesDoses[x]</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 </table>
+
+  
 
   
 
@@ -1235,18 +1291,16 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l7538">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 10, 2021 20:06+0000">2021-12-10</span>
+        <p><a name="l7710">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 22, 2022 19:58+0000">2022-03-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/ddcc/projects/1" target="_blank">Issues</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
                 
-                 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
-                 <a rel="license" style="color: #81BEF7" href="license.html"></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-
+| <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
           
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -1265,6 +1319,8 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

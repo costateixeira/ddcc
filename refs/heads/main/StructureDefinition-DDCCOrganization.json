@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "name": "DDCCOrganization",
   "title": "DDCC Organization",
   "status": "active",
-  "date": "2021-12-10T20:06:08+00:00",
+  "date": "2022-03-22T19:58:30+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -770,7 +770,8 @@
             "severity": "error",
             "human": "The telecom of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0"
+            "xpath": "count(f:use[@value='home']) = 0",
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "isModifier": false,
@@ -826,7 +827,8 @@
             "severity": "error",
             "human": "An address of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0"
+            "xpath": "count(f:use[@value='home']) = 0",
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "isModifier": false,

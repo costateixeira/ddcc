@@ -1,11 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1ec8cdd3-89eb-4bb6-bf6e-345cc689d5e5"/>
+  <id value="b832a826-9603-4235-b676-726de8e4f916"/>
   <meta>
-    <lastUpdated value="2021-12-10T20:06:08.357+00:00"/>
+    <lastUpdated value="2022-03-22T19:58:30.489+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet"/>
+    <resource>
+      <ValueSet>
+        <id value="DDCC-Composition-Category-ValueSet"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html">DDCC Composition Category Codes v0.3.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html">
+                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs"> </a>  
+                  <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs">ddcc-vs</a>
+                </td>
+                <td>DDCC:VS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr"> </a>  
+                  <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr">ddcc-tr</a>
+                </td>
+                <td>DDCC:TR</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet"/>
+        <version value="0.3.1"/>
+        <name value="DDCC_Composition_Category_ValueSet"/>
+        <title value="DDCC Composition Category Codes"/>
+        <status value="active"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="Categorization of DDCC Composition"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8dab1855-bd53-46f4-9773-1f9b0162d1fc"/>
+          <timestamp value="2022-03-22T20:00:09+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem|0.3.1"/>
+          </parameter>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem"/>
+            <code value="ddcc-vs"/>
+            <display value="DDCC:VS"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem"/>
+            <code value="ddcc-tr"/>
+            <display value="DDCC:TR"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet"/>
+    <resource>
+      <ValueSet>
+        <id value="DDCC-Device-Property-ValueSet"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html">DDCC Device Property Codes v0.3.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html">
+                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen"> </a>  
+                  <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen">pathogen</a>
+                </td>
+                <td>Pathogen Targeted</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand"> </a>  
+                  <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand">brand</a>
+                </td>
+                <td>Test Brand</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet"/>
+        <version value="0.3.1"/>
+        <name value="DDCC_Device_Property_ValueSet"/>
+        <title value="DDCC Device Property Codes"/>
+        <status value="active"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="Properties of DDCC devices"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:68482d4e-22d8-4308-b74d-57776bf71f48"/>
+          <timestamp value="2022-03-22T20:00:09+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem|0.3.1"/>
+          </parameter>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem"/>
+            <code value="pathogen"/>
+            <display value="Pathogen Targeted"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem"/>
+            <code value="brand"/>
+            <display value="Test Brand"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType"/>
     <resource>
@@ -16,7 +196,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 1 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DDCC-Folder-DesignationType.html">DDCC Designation Types for Folder v0.2.1 (CodeSystem)</a>
+              <a href="CodeSystem-DDCC-Folder-DesignationType.html">DDCC Designation Types for Folder v0.3.1 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-DDCC-Folder-DesignationType.html">
@@ -31,27 +211,23 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc"> </a>  
                   <a href="CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc">ddcc</a>
                 </td>
                 <td>DDCC</td>
-                <td/>
               </tr>
             </table>
           </div>
         </text>
         <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType"/>
-        <version value="0.2.1"/>
+        <version value="0.3.1"/>
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2021-12-10T20:06:08+00:00"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -68,8 +244,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:60634f1f-4dfe-4a05-b570-cba9e3cee543"/>
-          <timestamp value="2021-12-10T20:07:37+00:00"/>
+          <identifier value="urn:uuid:c31711fb-0497-45fe-9d2d-ecc82f8c1b57"/>
+          <timestamp value="2022-03-22T20:00:09+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -77,146 +253,12 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType|0.2.1"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType|0.3.1"/>
           </parameter>
           <contains>
             <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType"/>
             <code value="ddcc"/>
             <display value="DDCC"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
-    <resource>
-      <ValueSet>
-        <id value="DDCC-QR-Category-Usage-ValueSet"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html">DDCC QR Category Usage Codes v0.2.1 (CodeSystem)</a>
-            </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html">
-                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-who"> </a>
-                  <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-who">who</a>
-                </td>
-                <td>WHO SVC</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-dcc"> </a>
-                  <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-dcc">dcc</a>
-                </td>
-                <td>EU DCC</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-icao"> </a>
-                  <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-icao">icao</a>
-                </td>
-                <td>ICAO</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-au"> </a>
-                  <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-au">au</a>
-                </td>
-                <td>AU</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-shc"> </a>
-                  <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-shc">shc</a>
-                </td>
-                <td>SMART Health Card</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
-        <version value="0.2.1"/>
-        <name value="DDCC_QR_Category_Usage_ValueSet"/>
-        <title value="DDCC QR Category Usage Codes"/>
-        <status value="active"/>
-        <date value="2021-12-10T20:06:08+00:00"/>
-        <publisher value="WHO"/>
-        <contact>
-          <name value="WHO"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://who.int"/>
-          </telecom>
-        </contact>
-        <description value="Categorization of QR codes by their business usage"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:b3a23995-5252-47db-996e-6cb1b0624c16"/>
-          <timestamp value="2021-12-10T20:07:37+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem|0.2.1"/>
-          </parameter>
-          <contains>
-            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
-            <code value="who"/>
-            <display value="WHO SVC"/>
-          </contains>
-          <contains>
-            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
-            <code value="dcc"/>
-            <display value="EU DCC"/>
-          </contains>
-          <contains>
-            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
-            <code value="icao"/>
-            <display value="ICAO"/>
-          </contains>
-          <contains>
-            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
-            <code value="au"/>
-            <display value="AU"/>
-          </contains>
-          <contains>
-            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
-            <code value="shc"/>
-            <display value="SMART Health Card"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -232,7 +274,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">DDCC QR Format Codes v0.2.1 (CodeSystem)</a>
+              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">DDCC QR Format Codes v0.3.1 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">
@@ -247,43 +289,37 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image">image</a>
                 </td>
                 <td>Image</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized">serialized</a>
                 </td>
                 <td>Serialized QR Content</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf">pdf</a>
                 </td>
                 <td>PDF version of the QR image</td>
-                <td/>
               </tr>
             </table>
           </div>
         </text>
         <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet"/>
-        <version value="0.2.1"/>
+        <version value="0.3.1"/>
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2021-12-10T20:06:08+00:00"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -300,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7d7d8186-6463-4054-adaa-065bfbfa1917"/>
-          <timestamp value="2021-12-10T20:07:37+00:00"/>
+          <identifier value="urn:uuid:6bf871f3-e646-4bd8-a3ec-2bfd90404eb1"/>
+          <timestamp value="2022-03-22T20:00:09+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -309,7 +345,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|0.2.1"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|0.3.1"/>
           </parameter>
           <contains>
             <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
@@ -326,6 +362,380 @@
             <code value="pdf"/>
             <display value="PDF version of the QR image"/>
           </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet"/>
+    <resource>
+      <ValueSet>
+        <id value="DDCC-QR-Type-ValueSet"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html">DDCC QR Category Usage Codes v0.3.1 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html">
+                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who"> </a>  
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who">who</a>
+                </td>
+                <td>WHO DDCC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc"> </a>  
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc">dcc</a>
+                </td>
+                <td>EU DCC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao"> </a>  
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao">icao</a>
+                </td>
+                <td>ICAO</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au"> </a>  
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au">au</a>
+                </td>
+                <td>AU</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc"> </a>  
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc">shc</a>
+                </td>
+                <td>SMART Health Card</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc"> </a>  
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc">divoc</a>
+                </td>
+                <td>DIVOC</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet"/>
+        <version value="0.3.1"/>
+        <name value="DDCC_QR_Type_ValueSet"/>
+        <title value="DDCC QR Type Codes"/>
+        <status value="active"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="Type of QR codes by their business usage"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4523e22b-f91a-4428-ac25-aa5318960f66"/>
+          <timestamp value="2022-03-22T20:00:09+00:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem|0.3.1"/>
+          </parameter>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
+            <code value="who"/>
+            <display value="WHO DDCC"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
+            <code value="dcc"/>
+            <display value="EU DCC"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
+            <code value="icao"/>
+            <display value="ICAO"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
+            <code value="au"/>
+            <display value="AU"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
+            <code value="shc"/>
+            <display value="SMART Health Card"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
+            <code value="divoc"/>
+            <display value="DIVOC"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-sample-origin-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-258500001"> </a>  
+                  <a href="http://snomed.info/id/258500001">258500001</a>
+                </td>
+                <td>Nasopharyngeal swab</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-461911000124106"> </a>  
+                  <a href="http://snomed.info/id/461911000124106">461911000124106</a>
+                </td>
+                <td>Oropharyngeal swab</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-472881004"> </a>  
+                  <a href="http://snomed.info/id/472881004">472881004</a>
+                </td>
+                <td>Pharyngeal swab</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-472901003"> </a>  
+                  <a href="http://snomed.info/id/472901003">472901003</a>
+                </td>
+                <td>Swab from nasal sinus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119342007"> </a>  
+                  <a href="http://snomed.info/id/119342007">119342007</a>
+                </td>
+                <td>Saliva specimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119297000"> </a>  
+                  <a href="http://snomed.info/id/119297000">119297000</a>
+                </td>
+                <td>Blood specimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119361006"> </a>  
+                  <a href="http://snomed.info/id/119361006">119361006</a>
+                </td>
+                <td>Plasma specimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119364003"> </a>  
+                  <a href="http://snomed.info/id/119364003">119364003</a>
+                </td>
+                <td>Serum specimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-122592007"> </a>  
+                  <a href="http://snomed.info/id/122592007">122592007</a>
+                </td>
+                <td>Acellular blood (serum or plasma) specimen</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19"/>
+        <version value="0.3.1"/>
+        <name value="WHO_DDCC_Sample_Origin_COVID_19"/>
+        <title value="WHO Speciman Sample Origin (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Speciman Sample Origin List (COVID-19)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:12fdc898-4736-4aab-9349-7286d3d28e5a"/>
+          <timestamp value="2022-03-22T20:00:10+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258500001"/>
+            <display value="Nasopharyngeal swab"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="461911000124106"/>
+            <display value="Oropharyngeal swab"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="472881004"/>
+            <display value="Pharyngeal swab"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="472901003"/>
+            <display value="Swab from nasal sinus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119342007"/>
+            <display value="Saliva specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119297000"/>
+            <display value="Blood specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119361006"/>
+            <display value="Plasma specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119364003"/>
+            <display value="Serum specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="122592007"/>
+            <display value="Acellular blood (serum or plasma) specimen"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-type-of-test-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19"/>
+        <version value="0.3.1"/>
+        <name value="WHO_DDCC_Type_of_Test_COVID_19"/>
+        <title value="WHO Type of Covid-19 Test"/>
+        <status value="draft"/>
+        <date value="2022-03-22T19:58:30+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Type of COVID-19 Test"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2b9b400f-a822-4407-acb7-ed2836e7ea89"/>
+          <timestamp value="2022-03-22T20:00:11+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
         </expansion>
       </ValueSet>
     </resource>
