@@ -3,7 +3,7 @@
 
 err = 389, warn = 97, info = 30
 IG Publisher Version: 1.1.113
-Generated Tue Mar 22 20:07:50 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Tue Mar 22 20:10:58 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 17412 / 58 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -17592,7 +17592,7 @@ ERROR: /github/workspace/output/functionalrequirements.html#/html/body/div/div/n
 ERROR: /github/workspace/output/functionalrequirements.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 137, column 10: The link 'testing.html' for "Testing" cannot be resolved
 ERROR: /github/workspace/output/functionalrequirements.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 138, column 10: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/functionalrequirements.html#/html/body/div/div/nav/div/div/ul/li/a at Line 143, column 4: The link 'deployment.html' for "Indicesnull" cannot be resolved
-ERROR: /github/workspace/output/functionalrequirements.html#/html/body/div/div/div/p/a at Line 236, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/functionalrequirements.html#/html/body/div/div/div/p/a at Line 248, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/searchform.html#/html/body/div/div/a/img/div/div/nav/div/div/ul/li/a at Line 63, column 21: The link 'index.html' for "Specification" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 102, column 4: The link 'index.html' for "Homenull" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 105, column 9: The link 'index.html' for "Summary" cannot be resolved
