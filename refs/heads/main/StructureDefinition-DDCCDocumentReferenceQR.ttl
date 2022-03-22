@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCDocumentReferenceQR"];
   fhir:StructureDefinition.title [ fhir:value "DDCC DocumentReference return for QR"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-22T19:58:30+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-22T20:04:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
