@@ -20,7 +20,7 @@
   fhir:StructureMap.version [ fhir:value "0.3.1"];
   fhir:StructureMap.name [ fhir:value "ResourcesToVSCoreDataSet"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-03-23T17:44:48+00:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2022-03-23T20:45:19+00:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "WHO"];
   fhir:StructureMap.contact [
      fhir:index 0;
