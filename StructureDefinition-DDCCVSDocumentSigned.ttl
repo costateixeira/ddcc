@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCVSDocumentSigned"];
   fhir:StructureDefinition.title [ fhir:value "DDCC:VS DocumentSigned"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-22T21:10:15+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-23T17:44:48+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

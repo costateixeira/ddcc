@@ -1668,9 +1668,119 @@
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="actors.html"/>
+        <title value="Actors"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="concepts.html"/>
+        <title value="Concepts"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="content_profiles.html"/>
+        <title value="Content Profiles"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="data_exchange.html"/>
+        <title value="Data Exchange"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="dependencies.html"/>
+        <title value="Dependencies"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="dictionary.html"/>
+        <title value="Dictionary"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="expected_actions.html"/>
+        <title value="Expected Actions"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="functional.html"/>
+        <title value="Functional"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="functionalrequirements.html"/>
-        <title value="Functional Requirements"/>
+        <title value="Functionalrequirements"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="maps.html"/>
+        <title value="Maps"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="personas.html"/>
+        <title value="Personas"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="references.html"/>
+        <title value="References"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="requirements.html"/>
+        <title value="Requirements"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="security_privacy.html"/>
+        <title value="Security Privacy"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="testing.html"/>
+        <title value="Testing"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="transactions.html"/>
+        <title value="Transactions"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="usecases.html"/>
+        <title value="Usecases"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="workflows.html"/>
+        <title value="Workflows"/>
+        <generation value="html"/>
       </page>
     </page>
     <parameter>
