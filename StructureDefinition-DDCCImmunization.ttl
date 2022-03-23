@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCImmunization"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Immunization"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-23T20:45:19+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-23T20:58:03+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
