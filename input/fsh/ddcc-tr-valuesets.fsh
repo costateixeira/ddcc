@@ -82,6 +82,7 @@ Title:          "DDCC Device Property Codes"
 Description: 	"Properties of DDCC devices"
 * include codes from system DDCC_Device_Property_CodeSystem
 
+/*
 Instance:       who-ddcc-map-loinc-sct-type-of-test
 InstanceOf:     ConceptMap
 Description:    "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test"
@@ -110,6 +111,7 @@ Usage:          #definition
     * target[+]
       * code = #414464004
       * equivalence = #equivalent
+*/
 
 Instance:       who-ddcc-map-ichi-loinc-type-of-test
 InstanceOf:     ConceptMap
