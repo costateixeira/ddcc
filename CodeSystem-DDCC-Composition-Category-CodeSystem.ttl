@@ -5,54 +5,45 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DDCC-Composition-Category-CodeSystem"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ddcc-vs<a name=\"DDCC-Composition-Category-CodeSystem-ddcc-vs\"> </a></td><td>DDCC:VS</td></tr><tr><td style=\"white-space:nowrap\">ddcc-tr<a name=\"DDCC-Composition-Category-CodeSystem-ddcc-tr\"> </a></td><td>DDCC:TR</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem"];
-  fhir:CodeSystem.version [ fhir:value "0.3.1"];
-  fhir:CodeSystem.name [ fhir:value "DDCC_Composition_Category_CodeSystem"];
-  fhir:CodeSystem.title [ fhir:value "DDCC Composition Category Codes"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-03-23T20:58:03+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "WHO"];
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "WHO" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
-     ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Possible categories available for composition."];
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "ddcc-vs" ];
-     fhir:CodeSystem.concept.display [ fhir:value "DDCC:VS" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "ddcc-tr" ];
-     fhir:CodeSystem.concept.display [ fhir:value "DDCC:TR" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DDCC-Composition-Category-CodeSystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ddcc-vs<a name=\"DDCC-Composition-Category-CodeSystem-ddcc-vs\"> </a></td><td>DDCC:VS</td></tr><tr><td style=\"white-space:nowrap\">ddcc-tr<a name=\"DDCC-Composition-Category-CodeSystem-ddcc-tr\"> </a></td><td>DDCC:TR</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DDCC_Composition_Category_CodeSystem"] ; # 
+  fhir:title [ fhir:v "DDCC Composition Category Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-22T07:22:38+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Possible categories available for composition."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ddcc-vs" ] ;
+     fhir:display [ fhir:v "DDCC:VS" ]
+  ] [
+     fhir:code [ fhir:v "ddcc-tr" ] ;
+     fhir:display [ fhir:v "DDCC:TR" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

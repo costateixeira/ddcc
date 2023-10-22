@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.WHO.DDCC-VS\DDCCGenerateHealthFolder - TTL Representation - FHIR v4.0.1</title>
+    <title>OperationDefinition for generating a health folder (DDCCFolder). - TTL Representation - WHO Digital Documentation of COVID-19 Certificates (DDCC) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,9 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
-
     <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -32,31 +31,27 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.4"}
-    h3,h4,h5,h6{--heading-prefix:"24.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.4"}
+    h3,h4,h5,h6{--heading-prefix:"22.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
-
-<div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
-</div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
             <br/>
-            <span style="display:inline-block;">0.3.1 - CI Build
+            <span style="display:inline-block;">1.0.0 - CI Build
 
 
 
@@ -112,8 +107,8 @@
 		</a>
 		<ul class="dropdown-menu">
 		  <li><a href="concepts.html">Key Concepts</a></li>
-		  <li><a href="functional.html">Functional Requirements</a></li>    
-		  <li><a href="usecases.html">Use Cases</a></li>
+		  <li><a href="functional_requirements.html">Functional Requirements</a></li>    
+		  <li><a href="use_cases.html">Use Cases</a></li>
 		  <li><a href="dictionary.html">Data Dictionary</a></li>
 		</ul>
 	</li>
@@ -132,6 +127,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="reference_implementation.html">Reference Implementations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
@@ -141,6 +137,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Indices<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="artifacts.html">Artifact Index</a></li>
+		   <li><a href="maps.html">Maps</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -156,7 +153,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>DDCCGenerateHealthFolder</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>OperationDefinition for generating a health folder (DDCCFolder).</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -169,7 +166,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
+
+
 
 
 
@@ -182,6 +181,7 @@
   <li>
     <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -212,7 +212,8 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: DDCCGenerateHealthFolder - TTL Representation</h2>
+<h2 id="root">: OperationDefinition for generating a health folder (DDCCFolder). - TTL Representation</h2>
+
   <table class="colsd">
     <tr>
 
@@ -236,7 +237,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle">
+  <pre style="white-space: pre; overflow: hidden" class="rdf"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -244,68 +245,54 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:OperationDefinition;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "DDCC-QuestionnaireResponse-generateHealthFolder"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "extensions" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h2&gt;QuestionnaireResponse_Generate_Health_Folder&lt;/h2&gt;&lt;p&gt;OPERATION: QuestionnaireResponse_Generate_Health_Folder&lt;/p&gt;&lt;p&gt;The official URL for this operation definition is: &lt;/p&gt;&lt;pre&gt;http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder&lt;/pre&gt;&lt;div&gt;&lt;p&gt;Generate a DDCC Folder from an IPS Bundle.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;URL: [base]/Bundle/$generateHealthFolder&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;bundle&lt;/td&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/bundle.html\"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The bundle resource used to generate the DDCC Folder.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/list.html\"&gt;List&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The DDCC Folder that was created.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-  ];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">fhir:OperationDefinition.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:OperationDefinition.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.3.1"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">fhir:OperationDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "QuestionnaireResponse_Generate_Health_Folder"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">fhir:OperationDefinition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "OperationDefinition for generating a health folder (DDCCFolder)."];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">fhir:OperationDefinition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "draft"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">fhir:OperationDefinition.kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "operation"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.experimental">fhir:OperationDefinition.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:OperationDefinition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2022-01-24"^^xsd:date];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">fhir:OperationDefinition.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "WHO"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">fhir:OperationDefinition.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "WHO" ];
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "url" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "http://who.int" ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.description">fhir:OperationDefinition.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "Generate a DDCC Folder from an IPS Bundle."];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.jurisdiction">fhir:OperationDefinition.jurisdiction</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "001" ]     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.code">fhir:OperationDefinition.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generateHealthFolder"];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.resource">fhir:OperationDefinition.resource</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "Bundle";
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0
-  ];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.system">fhir:OperationDefinition.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">fhir:OperationDefinition.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> "true"^^xsd:boolean];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">fhir:OperationDefinition.instance</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> "false"^^xsd:boolean];
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">fhir:OperationDefinition.parameter</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:OperationDefinition.parameter.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "bundle" ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:OperationDefinition.parameter.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "in" ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:OperationDefinition.parameter.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> "1"^^xsd:integer ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:OperationDefinition.parameter.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1" ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:OperationDefinition.parameter.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "The bundle resource used to generate the DDCC Folder." ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:OperationDefinition.parameter.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "Bundle" ]
-  ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:OperationDefinition.parameter.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "return" ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:OperationDefinition.parameter.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "out" ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:OperationDefinition.parameter.min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> "0"^^xsd:integer ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:OperationDefinition.parameter.max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1" ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:OperationDefinition.parameter.documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "The DDCC Folder that was created." ];
-     <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:OperationDefinition.parameter.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "List" ]
-  ].
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
+ a fhir:OperationDefinition ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "DDCC-QuestionnaireResponse-generateHealthFolder"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "extensions" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;URL: [base]/Bundle/$generateHealthFolder&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;bundle&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/bundle.html\"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The bundle resource used to generate the DDCC Folder.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;return&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/list.html\"&gt;List&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The DDCC Folder that was created.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1.0.0"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "QuestionnaireResponse_Generate_Health_Folder"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "OperationDefinition for generating a health folder (DDCCFolder)."] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "draft"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "operation"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "true"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> "2022-01-24"^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "WHO"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "WHO" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "http://who.int" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "Generate a DDCC Folder from an IPS Bundle."] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "001" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "generateHealthFolder"] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.resource">fhir:resource</a> ( [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "Bundle"] ) ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "true"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">fhir:instance</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">fhir:parameter</a> ( [
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "bundle" ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "in" ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> "1"^^xsd:integer ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1" ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "The bundle resource used to generate the DDCC Folder." ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "Bundle" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "return" ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "out" ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> "0"^^xsd:integer ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "1" ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "The DDCC Folder that was created." ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "List" ]
+  ] ) . # 
 
 </code></pre>
 
@@ -337,17 +324,16 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l674">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 20:58+0000">2022-03-23</span>
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 22, 2023 07:22+0000">2023-10-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l667">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
                 
 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -441,7 +427,7 @@ anchors.add()</script>
             
           if (id) { //To make sure the element has an id
             $(this).append(function () {
-              return $('<a></a>', {
+              return $('<a/>', {
                 id,
                 href: feedbackurl,
                 text: feedbacklabel+' ' ,

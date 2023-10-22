@@ -5,58 +5,48 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DDCC-QR-Format-CodeSystem"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">image<a name=\"DDCC-QR-Format-CodeSystem-image\"> </a></td><td>Image</td></tr><tr><td style=\"white-space:nowrap\">serialized<a name=\"DDCC-QR-Format-CodeSystem-serialized\"> </a></td><td>Serialized QR Content</td></tr><tr><td style=\"white-space:nowrap\">pdf<a name=\"DDCC-QR-Format-CodeSystem-pdf\"> </a></td><td>PDF version of the QR image</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"];
-  fhir:CodeSystem.version [ fhir:value "0.3.1"];
-  fhir:CodeSystem.name [ fhir:value "DDCC_QR_Format_CodeSystem"];
-  fhir:CodeSystem.title [ fhir:value "DDCC QR Format Codes"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-03-23T20:58:03+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "WHO"];
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "WHO" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
-     ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Possible formats available for QR data."];
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "image" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Image" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "serialized" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Serialized QR Content" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "pdf" ];
-     fhir:CodeSystem.concept.display [ fhir:value "PDF version of the QR image" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DDCC-QR-Format-CodeSystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">image<a name=\"DDCC-QR-Format-CodeSystem-image\"> </a></td><td>Image</td></tr><tr><td style=\"white-space:nowrap\">serialized<a name=\"DDCC-QR-Format-CodeSystem-serialized\"> </a></td><td>Serialized QR Content</td></tr><tr><td style=\"white-space:nowrap\">pdf<a name=\"DDCC-QR-Format-CodeSystem-pdf\"> </a></td><td>PDF version of the QR image</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DDCC_QR_Format_CodeSystem"] ; # 
+  fhir:title [ fhir:v "DDCC QR Format Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-22T07:22:38+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Possible formats available for QR data."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "image" ] ;
+     fhir:display [ fhir:v "Image" ]
+  ] [
+     fhir:code [ fhir:v "serialized" ] ;
+     fhir:display [ fhir:v "Serialized QR Content" ]
+  ] [
+     fhir:code [ fhir:v "pdf" ] ;
+     fhir:display [ fhir:v "PDF version of the QR image" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

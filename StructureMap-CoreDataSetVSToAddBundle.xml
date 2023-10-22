@@ -3,8 +3,8 @@
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="CoreDataSetVSToAddBundle"/>
   <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2022-03-01T19:17:55.942+00:00"/>
+    <versionId value="2"/>
+    <lastUpdated value="2022-06-01T12:54:53.172+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&quot; = &quot;CoreDataSetVSToAddBundle&quot;
@@ -15,17 +15,17 @@ uses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias AddBundle 
 
 imports &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;
 
-group CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
+group CoreDataSetVSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
   ddcc -&gt; bundle then VSToAddBundle(ddcc, bundle) &quot;setup add bundle&quot;;
 }
 
 </pre></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="CoreDataSetVSToAddBundle"/>
   <status value="draft"/>
-  <date value="2022-03-23T20:58:03+00:00"/>
+  <date value="2023-10-22T07:22:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -52,7 +52,7 @@ group CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
   </structure>
   <import value="http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary"/>
   <group>
-    <name value="CoreDataSetToAddBundle"/>
+    <name value="CoreDataSetVSToAddBundle"/>
     <typeMode value="none"/>
     <input>
       <name value="ddcc"/>

@@ -1,6 +1,6 @@
 {
-  "package": "fhir.who.ddcc-vs",
-  "version": "0.3.1",
+  "package": "fhir.who.ddcc",
+  "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [
@@ -8,7 +8,6 @@
       "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent",
       "title": "DDCC Country Of Event for Immunization",
       "types": [
-        "code",
         "code"
       ]
     },
@@ -16,7 +15,6 @@
       "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand",
       "title": "DDCC Event Brand for Immunization",
       "types": [
-        "Coding",
         "Coding"
       ]
     },
@@ -24,7 +22,6 @@
       "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization",
       "title": "DDCC Vaccine Market Authorization for Immunization",
       "types": [
-        "Coding",
         "Coding"
       ]
     },
@@ -32,7 +29,6 @@
       "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom",
       "title": "DDCC Vaccine Valid From",
       "types": [
-        "date",
         "date"
       ]
     }
@@ -156,6 +152,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
+      "ConceptMap.group.element.target"
+    ],
     "http://hl7.org/fhir/StructureDefinition/cqf-library": [
       "Questionnaire"
     ],
@@ -211,9 +210,6 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -227,9 +223,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
@@ -240,8 +233,21 @@
       "Questionnaire",
       "Questionnaire.item"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
@@ -293,18 +299,6 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap": [
       "Questionnaire"
     ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [
-      "List.source"
-    ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType": [
-      "List"
-    ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient": [
-      "List"
-    ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId": [
-      "List"
-    ],
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent": [
       "Bundle.entry.resource",
       "Immunization",
@@ -321,6 +315,18 @@
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom": [
       "Bundle.entry.resource",
       "Immunization"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [
+      "List.source"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType": [
+      "List"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient": [
+      "List"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId": [
+      "List"
     ]
   }
 }

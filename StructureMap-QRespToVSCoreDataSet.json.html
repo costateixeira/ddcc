@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.WHO.DDCC-VS\QRespToVSCoreDataSet - JSON Representation - FHIR v4.0.1</title>
+    <title>QRespToVSCoreDataSet - JSON Representation - WHO Digital Documentation of COVID-19 Certificates (DDCC) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,9 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
-
     <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -32,31 +31,27 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.79"}
-    h3,h4,h5,h6{--heading-prefix:"24.79"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.126"}
+    h3,h4,h5,h6{--heading-prefix:"22.126"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
-
-<div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
-</div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
             <br/>
-            <span style="display:inline-block;">0.3.1 - CI Build
+            <span style="display:inline-block;">1.0.0 - CI Build
 
 
 
@@ -112,8 +107,8 @@
 		</a>
 		<ul class="dropdown-menu">
 		  <li><a href="concepts.html">Key Concepts</a></li>
-		  <li><a href="functional.html">Functional Requirements</a></li>    
-		  <li><a href="usecases.html">Use Cases</a></li>
+		  <li><a href="functional_requirements.html">Functional Requirements</a></li>    
+		  <li><a href="use_cases.html">Use Cases</a></li>
 		  <li><a href="dictionary.html">Data Dictionary</a></li>
 		</ul>
 	</li>
@@ -132,6 +127,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="reference_implementation.html">Reference Implementations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
@@ -141,6 +137,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Indices<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="artifacts.html">Artifact Index</a></li>
+		   <li><a href="maps.html">Maps</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -169,7 +166,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
+
+
 
 
 
@@ -182,6 +181,7 @@
   <li>
     <a href="StructureMap-QRespToVSCoreDataSet.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -213,6 +213,7 @@
 
 
 <h2 id="root">: QRespToVSCoreDataSet - JSON Representation</h2>
+
   <table class="colsd">
     <tr>
 
@@ -220,7 +221,7 @@
         
           Draft
           
-            as of 2022-03-23
+            as of 2023-10-22
           
         
       </td>
@@ -236,7 +237,7 @@
 
 
 
-  <pre class="json"><code>
+  <pre style="white-space: pre; overflow: hidden" class="json"><code>
 {
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "QRespToVSCoreDataSet",
@@ -249,10 +250,10 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;pre&gt;map &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToVSCoreDataSet&amp;quot; = &amp;quot;QRespToVSCoreDataSet&amp;quot;\r\n\r\n\r\nuses &amp;quot;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&amp;quot; alias QResp as source\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.CoC&amp;quot; alias DDCC as target\r\n\r\ngroup QRespToCoreDataSet(source qr : QResp, target ddcc : DDCC) {\r\n  qr as src then QRespToHeader(src, ddcc) &amp;quot;set header content&amp;quot;;\r\n  qr as src -&amp;gt; ddcc.vaccination as vaccination then QRespToVaccination(src, vaccination) &amp;quot;set vaccination content&amp;quot;;\r\n  qr as src -&amp;gt; ddcc.certificate as certificate then QRespToCertificate(src, certificate) &amp;quot;set certificate content&amp;quot;;\r\n}\r\n\r\ngroup QRespToHeader(source qr, target ddcc) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'name' then {\r\n      answer.valueString as content -&amp;gt; ddcc.name = content &amp;quot;set name&amp;quot;;\r\n    } &amp;quot;first answser for name&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'birthDate' then {\r\n      answer.valueDate as content -&amp;gt; ddcc.birthDate = content &amp;quot;set birthDate&amp;quot;;\r\n    } &amp;quot;first answer for birthDate&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'identifier' -&amp;gt; ddcc.identifier as identifier then {\r\n      answer.valueString as content -&amp;gt; identifier.value = content &amp;quot;set identifier&amp;quot;;\r\n    } &amp;quot;first answer for identifier&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'sex' then {\r\n      answer.valueCoding as coding then {\r\n        coding.code as content -&amp;gt; ddcc.sex = content &amp;quot;set sex&amp;quot;;\r\n      } &amp;quot;process coding&amp;quot;;\r\n    } &amp;quot;first answer for sex&amp;quot;;\r\n  } &amp;quot;header items&amp;quot;;\r\n}\r\n\r\ngroup QRespToVaccination(source qr, target vaccination) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'vaccine' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.vaccine = content &amp;quot;set vaccine&amp;quot;;\r\n    } &amp;quot;first answer for vaccine&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'brand' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.brand = content &amp;quot;set brand&amp;quot;;\r\n    } &amp;quot;first answer for brand&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'manufacturer' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.manufacturer = content &amp;quot;set manufacturer&amp;quot;;\r\n    } &amp;quot;first answer for manufacturer&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'ma_holder' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.maholder = content &amp;quot;set maholder&amp;quot;;\r\n    } &amp;quot;first answer for maholder&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'lot' then {\r\n      answer.valueString as content -&amp;gt; vaccination.lot = content &amp;quot;set lot&amp;quot;;\r\n    } &amp;quot;first answser for lot&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'date' then {\r\n      answer.valueDate as content -&amp;gt; vaccination.date = content &amp;quot;set date&amp;quot;;\r\n    } &amp;quot;first answer for date&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'vaccine_valid' then {\r\n      answer.valueDate as content -&amp;gt; vaccination.validFrom = content &amp;quot;set validFrom&amp;quot;;\r\n    } &amp;quot;first answer for validFrom&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'dose' then {\r\n      answer.valueInteger as content -&amp;gt; vaccination.dose = content &amp;quot;set dose&amp;quot;;\r\n    } &amp;quot;first answer for dose&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'total_doses' then {\r\n      answer.valueInteger as content -&amp;gt; vaccination.totalDoses = content &amp;quot;set totalDoses&amp;quot;;\r\n    } &amp;quot;first answer for totalDoses&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'country' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.country = content &amp;quot;set country&amp;quot;;\r\n    } &amp;quot;first answer for country&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'centre' then {\r\n      answer.valueString as content -&amp;gt; vaccination.centre = content &amp;quot;set centre&amp;quot;;\r\n    } &amp;quot;first answser for centre&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'hw' -&amp;gt; vaccination.practitioner as identifier then {\r\n      answer.valueString as content -&amp;gt; identifier.value = content &amp;quot;set practitioner&amp;quot;;\r\n    } &amp;quot;first answser for practitioner&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'disease' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.disease = content &amp;quot;set disease&amp;quot;;\r\n    } &amp;quot;first answer for disease&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'due_date' then {\r\n      answer.valueDate as content -&amp;gt; vaccination.nextDose = content &amp;quot;set nextDose&amp;quot;;\r\n    } &amp;quot;first answer for nextDose&amp;quot;;\r\n  } &amp;quot;vaccination items&amp;quot;;\r\n}\r\n\r\ngroup QRespToPeriod(source qr, target period) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'valid_from' then {\r\n      answer.valueDate as content -&amp;gt; period.start = content &amp;quot;set valid_from&amp;quot;;\r\n    } &amp;quot;first answer for valid_from&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'valid_until' then {\r\n      answer.valueDate as content -&amp;gt; period.end = content &amp;quot;set valid_until&amp;quot;;\r\n    } &amp;quot;first answer for valid_until&amp;quot;;\r\n  } &amp;quot;vaccination validity items&amp;quot;;\r\n}\r\n\r\ngroup QRespToCertificate(source qr, target certificate) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'pha' -&amp;gt; certificate.issuer as issuer then {\r\n      answer.valueString as content -&amp;gt; issuer.identifier as identifier then {\r\n        content as value -&amp;gt; identifier.value = value &amp;quot;set issuer identifier&amp;quot;;\r\n      } &amp;quot;set issuer&amp;quot;;\r\n    } &amp;quot;first answser for hcid&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'hcid' -&amp;gt; certificate.hcid as hcid then {\r\n      answer.valueString as content -&amp;gt;  hcid.value = content,  certificate.version = 'RC2' &amp;quot;set hcid and version&amp;quot;;\r\n    } &amp;quot;first answser for hcid&amp;quot;;\r\n  } &amp;quot;certificate items&amp;quot;;\r\n  qr as src -&amp;gt; certificate.period as period then QRespToPeriod(src, period) &amp;quot;set vaccination period&amp;quot;;\r\n}\r\n\r\n&lt;/pre&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToVSCoreDataSet",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.3.1",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "QRespToVSCoreDataSet",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2022-03-23T20:58:03+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2023-10-22T07:22:38+00:00",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
     {
@@ -1432,17 +1433,16 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l2296">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 20:58+0000">2022-03-23</span>
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 22, 2023 07:22+0000">2023-10-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l2310">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
                 
 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -1536,7 +1536,7 @@ anchors.add()</script>
             
           if (id) { //To make sure the element has an id
             $(this).append(function () {
-              return $('<a></a>', {
+              return $('<a/>', {
                 id,
                 href: feedbackurl,
                 text: feedbacklabel+' ' ,

@@ -27,7 +27,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="ImmunizationUvIps"/>
   <title value="Immunization (IPS)"/>
   <status value="active"/>
@@ -171,7 +171,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
@@ -554,7 +554,6 @@
       </slicing>
       <short value="Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;     The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunised is provided; or the known absent / unknown code.&#xD;&#xA;&#xD;&#xA;     Other coded information can be provided as well as: the IDMP Pharmaceutical Product Identifiers (PhPID), Medicinal Product Identifier (MPID), Packaged Medicinal Product Identifier (PCID), when available, or equivalent coded concepts; the WHO ATC codes; or any other kind of code that that identifies, classifies or cluster the administered product."/>
       <definition value="Vaccine that was administered or was to be administered. Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunized is provided; or the known absent / unknown.&#xD;&#xA;&#xD;&#xA;    Other coded information can be provided as well as:&#xD;&#xA;&#xD;&#xA;    1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept.&#xD;&#xA;    2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept.&#xD;&#xA;    3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example: Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept.&#xD;&#xA;    4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept.&#xD;&#xA;    5. The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID.     The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;    6. The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier.     Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;    7. Any other kind of code that that identifies, classifies or clusters the administered product (e.g. the medicinal product or the product class).&#xD;&#xA;&#xD;&#xA;    The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -583,20 +582,24 @@
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
       </binding>
       <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
+        <identity value="workflow"/>
+        <map value="Event.code"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="FiveWs.what[x]"/>
       </mapping>
       <mapping>
         <identity value="v2"/>
-        <map value="CE/CNE/CWE"/>
+        <map value="RXA-5"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
-        <map value="CD"/>
+        <map value=".code"/>
       </mapping>
       <mapping>
-        <identity value="orim"/>
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD"/>
+        <identity value="cda"/>
+        <map value="ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/realmCode/code"/>
       </mapping>
     </element>
     <element id="Immunization.vaccineCode:vaccineGPSCode">
@@ -1511,7 +1514,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
         <strength value="preferred"/>
@@ -2063,6 +2065,7 @@
         <human value="One of documentType or reference SHALL be present"/>
         <expression value="documentType.exists() or reference.exists()"/>
         <xpath value="exists(f:documentType) or exists(f:reference)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
