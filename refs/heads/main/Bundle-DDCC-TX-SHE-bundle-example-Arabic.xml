@@ -68,8 +68,8 @@
                 <linkId value="brand"/>
                 <answer>
                   <valueCoding>
-                    <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem"/>
-                    <code value="TEST"/>
+                    <system value="http://id.who.int/icd11/mms"/>
+                    <code value="XM1G90"/>
                   </valueCoding>
                 </answer>
               </item>

@@ -3,14 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="DDCC-Folder-DesignationType"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ddcc<a name="DDCC-Folder-DesignationType-ddcc"> </a></td><td>DDCC</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ddcc<a name="DDCC-Folder-DesignationType-ddcc"> </a></td><td>DDCC</td></tr></table></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="DDCC_Folder_DesignationType_Codesystem"/>
   <title value="DDCC Designation Types for Folder"/>
-  <status value="active"/>
-  <date value="2022-03-23T20:58:03+00:00"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-10-22T07:22:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -26,6 +27,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="1"/>
   <concept>

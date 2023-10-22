@@ -60,7 +60,7 @@
                 <answer>
                   <valueCoding>
                     <system value="http://id.who.int/icd11/mms"/>
-                    <code value="XM1NL1"/>
+                    <code value="XM5JC5"/>
                   </valueCoding>
                 </answer>
               </item>
@@ -68,8 +68,8 @@
                 <linkId value="brand"/>
                 <answer>
                   <valueCoding>
-                    <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem"/>
-                    <code value="TEST"/>
+                    <system value="http://id.who.int/icd11/mms"/>
+                    <code value="XM6SZ8"/>
                   </valueCoding>
                 </answer>
               </item>

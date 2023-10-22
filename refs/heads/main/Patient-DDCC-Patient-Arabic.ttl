@@ -5,31 +5,24 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Arabic> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DDCC-Patient-Arabic"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-       fhir:index 0;
+<http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Arabic> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DDCC-Patient-Arabic"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"^^xsd:anyURI ;
        fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>أولوس أجيريوس(OFFICIAL)</b> (no stated gender), DoB: 2003-03-03</p></div>"
-  ];
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "أولوس أجيريوس" ]
-  ];
-  fhir:Patient.birthDate [ fhir:value "2003-03-03"^^xsd:date] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Arabic.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>أولوس أجيريوس(OFFICIAL)</b> (no stated gender), DoB: 2003-03-03</p><hr/></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "أولوس أجيريوس" ]
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "2003-03-03"^^xsd:date] . # 
 
 # -------------------------------------------------------------------------------------
 

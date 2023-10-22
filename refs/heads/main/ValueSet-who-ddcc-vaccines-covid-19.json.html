@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.WHO.DDCC-VS\WHO Vaccine List (COVID-19) - JSON Representation - FHIR v4.0.1</title>
+    <title>WHO Vaccine List (COVID-19) - JSON Representation - WHO Digital Documentation of COVID-19 Certificates (DDCC) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,9 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
-
     <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -32,31 +31,27 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.67"}
-    h3,h4,h5,h6{--heading-prefix:"24.67"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.91"}
+    h3,h4,h5,h6{--heading-prefix:"22.91"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
-
-<div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
-</div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
             <br/>
-            <span style="display:inline-block;">0.3.1 - CI Build
+            <span style="display:inline-block;">1.0.0 - CI Build
 
 
 
@@ -112,8 +107,8 @@
 		</a>
 		<ul class="dropdown-menu">
 		  <li><a href="concepts.html">Key Concepts</a></li>
-		  <li><a href="functional.html">Functional Requirements</a></li>    
-		  <li><a href="usecases.html">Use Cases</a></li>
+		  <li><a href="functional_requirements.html">Functional Requirements</a></li>    
+		  <li><a href="use_cases.html">Use Cases</a></li>
 		  <li><a href="dictionary.html">Data Dictionary</a></li>
 		</ul>
 	</li>
@@ -132,6 +127,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="reference_implementation.html">Reference Implementations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
@@ -141,6 +137,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Indices<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="artifacts.html">Artifact Index</a></li>
+		   <li><a href="maps.html">Maps</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -169,7 +166,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
+
+
 
 
 
@@ -182,6 +181,7 @@
   <li>
     <a href="ValueSet-who-ddcc-vaccines-covid-19.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -213,6 +213,7 @@
 
 
 <h2 id="root">: WHO Vaccine List (COVID-19) - JSON Representation</h2>
+
   <table class="colsd">
     <tr>
 
@@ -220,7 +221,7 @@
         
           Draft
           
-            as of 2022-03-23
+            as of 2023-10-22
           
         
       </td>
@@ -236,20 +237,20 @@
 
 
 
-  <pre class="json"><code class="language-json">
+  <pre style="white-space: pre; overflow: hidden" class="json"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "who-ddcc-vaccines-covid-19",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;http://id.who.int/icd11/mms&lt;/code&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM68M6&lt;/td&gt;&lt;td&gt;COVID-19 vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM1NL1&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, inactivated virus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM7HT3&lt;/td&gt;&lt;td&gt;CoronaVac&reg;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM8866&lt;/td&gt;&lt;td&gt;BBIBP-CorV&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM9TQ1&lt;/td&gt;&lt;td&gt;KCONVAC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM1G90&lt;/td&gt;&lt;td&gt;Covaxin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM85P5&lt;/td&gt;&lt;td&gt;Covi-Vac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM9FQ7&lt;/td&gt;&lt;td&gt;Hayat-Vax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM97N6&lt;/td&gt;&lt;td&gt;QazVac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM2YG8&lt;/td&gt;&lt;td&gt;COVIran Barakat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM3U61&lt;/td&gt;&lt;td&gt;Inactivated SARS-CoV-2 vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM5DF6&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, live attenuated virus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM9QW8&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, non-replicating viral vector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM4YL8&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine AstraZeneca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM97T2&lt;/td&gt;&lt;td&gt;Covishield&reg;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM6QV1&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine Janssen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM1AG7&lt;/td&gt;&lt;td&gt;Convidecia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM5ZJ4&lt;/td&gt;&lt;td&gt;Gam-Covid-Vac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM5QM6&lt;/td&gt;&lt;td&gt;Sputnik-Light&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM0CX4&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, replicating viral vector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM5JC5&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, virus protein subunit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM3CT4&lt;/td&gt;&lt;td&gt;Recombinant SARS-CoV-2 vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM3PG0&lt;/td&gt;&lt;td&gt;Soberana-02&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM4EC8&lt;/td&gt;&lt;td&gt;MVC-COV1901&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM6SZ8&lt;/td&gt;&lt;td&gt;EpiVacCorona&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM1J92&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, virus like particle (VLP)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM6AT1&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, DNA based&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM52P3&lt;/td&gt;&lt;td&gt;ZyCov-D&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM0GQ8&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, RNA based&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM8NQ0&lt;/td&gt;&lt;td&gt;Comirnaty&reg;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;XM3DT5&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine Moderna&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\"&gt;&lt;code&gt;http://id.who.int/icd11/mms&lt;/code&gt;&lt;/a&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM68M6\"&gt;XM68M6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1NL1\"&gt;XM1NL1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, inactivated virus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3\"&gt;XM7HT3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;CoronaVac&reg;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866\"&gt;XM8866&lt;/a&gt;&lt;/td&gt;&lt;td&gt;BBIBP-CorV&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1\"&gt;XM9TQ1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;KCONVAC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90\"&gt;XM1G90&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Covaxin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5\"&gt;XM85P5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Covi-Vac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7\"&gt;XM9FQ7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hayat-Vax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6\"&gt;XM97N6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;QazVac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8\"&gt;XM2YG8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVIran Barakat&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3U61\"&gt;XM3U61&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inactivated SARS-CoV-2 vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5DF6\"&gt;XM5DF6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, live attenuated virus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9QW8\"&gt;XM9QW8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, non-replicating viral vector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8\"&gt;XM4YL8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine AstraZeneca&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2\"&gt;XM97T2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Covishield&reg;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1\"&gt;XM6QV1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine Janssen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7\"&gt;XM1AG7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Convidecia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4\"&gt;XM5ZJ4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Gam-Covid-Vac&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6\"&gt;XM5QM6&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sputnik-Light&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0CX4\"&gt;XM0CX4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, replicating viral vector&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5JC5\"&gt;XM5JC5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, virus protein subunit&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3CT4\"&gt;XM3CT4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Recombinant SARS-CoV-2 vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0\"&gt;XM3PG0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Soberana-02&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8\"&gt;XM4EC8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;MVC-COV1901&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8\"&gt;XM6SZ8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;EpiVacCorona&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1J92\"&gt;XM1J92&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, virus like particle (VLP)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6AT1\"&gt;XM6AT1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, DNA based&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3\"&gt;XM52P3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ZyCov-D&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0GQ8\"&gt;XM0GQ8&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 vaccine, RNA based&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0\"&gt;XM8NQ0&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Comirnaty&reg;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5\"&gt;XM3DT5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 Vaccine Moderna&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.3.1",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "WHO_DDCC_Vaccines_COVID_19",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "WHO Vaccine List (COVID-19)",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2022-03-23T20:58:03+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-10-22T07:22:38+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "WHO",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -435,17 +436,16 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l694">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 20:58+0000">2022-03-23</span>
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 22, 2023 07:22+0000">2023-10-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l708">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
                 
 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -539,7 +539,7 @@ anchors.add()</script>
             
           if (id) { //To make sure the element has an id
             $(this).append(function () {
-              return $('<a></a>', {
+              return $('<a/>', {
                 id,
                 href: feedbackurl,
                 text: feedbacklabel+' ' ,

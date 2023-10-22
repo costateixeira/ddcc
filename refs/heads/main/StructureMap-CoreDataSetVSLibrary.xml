@@ -3,8 +3,8 @@
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="CoreDataSetVSLibrary"/>
   <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2022-03-01T19:17:54.783+00:00"/>
+    <versionId value="2"/>
+    <lastUpdated value="2022-06-01T12:53:30.965+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot; = &quot;CoreDataSetVSLibrary&quot;
@@ -34,13 +34,17 @@ group VSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
       ddcc -&gt; comp.title = 'International Certificate of Vaccination or Prophylaxis' &quot;set title&quot;;
       ddcc -&gt; comp.section as section then {
         ddcc -&gt;  section.code as code,  code.coding as coding,  coding.system = 'http://loinc.org',  coding.code = '11369-6' &quot;set code&quot;;
-        ddcc.certificate as certificate -&gt; section.author as author then {
-          certificate.issuer as issuer -&gt; author.type = 'Organization' then {
-            issuer.identifier as pha -&gt; author.identifier as identifier then {
-              pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;
-            } &quot;set author identifier&quot;;
-          } &quot;set author ref&quot;;
-        } &quot;set author&quot;;
+        ddcc.certificate as certificate then {
+          certificate.issuer as issuer -&gt; section.author = issuer &quot;set author&quot;;
+        } &quot;set certificate&quot;;
+        // ddcc.certificate as certificate -&gt; section.author as author then {
+        //             certificate.issuer as issuer then {
+        //               issuer.identifier as pha -&gt; author.identifier as identifier, author.type = &quot;Organization&quot; then {
+        //                 pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;
+        //               } &quot;set author identifier&quot;;
+        //             } &quot;set author ref&quot;;
+        //             
+        //           } &quot;set author&quot;;
         ddcc -&gt;  section.focus as focus,  focus.reference = append('Immunization/', iid) &quot;set focus&quot;;
         ddcc -&gt;  section.entry as entry,  entry.reference = append('Immunization/', iid) &quot;add Immunization entry&quot;;
         ddcc -&gt;  section.entry as entry,  entry.reference = append('ImmunizationRecommendation/', irid) &quot;add ImmunizationRecommendation entry&quot;;
@@ -155,10 +159,10 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
 </pre></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="CoreDataSetVSLibrary"/>
   <status value="draft"/>
-  <date value="2022-03-23T20:58:03+00:00"/>
+  <date value="2023-10-22T07:22:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -533,65 +537,28 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
             </target>
           </rule>
           <rule>
-            <name value="set author"/>
+            <name value="set certificate"/>
             <source>
               <context value="ddcc"/>
               <element value="certificate"/>
               <variable value="certificate"/>
             </source>
-            <target>
-              <context value="section"/>
-              <contextType value="variable"/>
-              <element value="author"/>
-              <variable value="author"/>
-            </target>
             <rule>
-              <name value="set author ref"/>
+              <name value="set author"/>
               <source>
                 <context value="certificate"/>
                 <element value="issuer"/>
                 <variable value="issuer"/>
               </source>
               <target>
-                <context value="author"/>
+                <context value="section"/>
                 <contextType value="variable"/>
-                <element value="type"/>
+                <element value="author"/>
                 <transform value="copy"/>
                 <parameter>
-                  <valueString value="Organization"/>
+                  <valueId value="issuer"/>
                 </parameter>
               </target>
-              <rule>
-                <name value="set author identifier"/>
-                <source>
-                  <context value="issuer"/>
-                  <element value="identifier"/>
-                  <variable value="pha"/>
-                </source>
-                <target>
-                  <context value="author"/>
-                  <contextType value="variable"/>
-                  <element value="identifier"/>
-                  <variable value="identifier"/>
-                </target>
-                <rule>
-                  <name value="set pha"/>
-                  <source>
-                    <context value="pha"/>
-                    <element value="value"/>
-                    <variable value="value"/>
-                  </source>
-                  <target>
-                    <context value="identifier"/>
-                    <contextType value="variable"/>
-                    <element value="value"/>
-                    <transform value="copy"/>
-                    <parameter>
-                      <valueId value="value"/>
-                    </parameter>
-                  </target>
-                </rule>
-              </rule>
             </rule>
           </rule>
           <rule>
@@ -617,6 +584,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
                 <valueId value="iid"/>
               </parameter>
             </target>
+            <documentation value="ddcc.certificate as certificate -&gt; section.author as author then {&#xA;            certificate.issuer as issuer then {&#xA;              issuer.identifier as pha -&gt; author.identifier as identifier, author.type = &quot;Organization&quot; then {&#xA;                pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;&#xA;              } &quot;set author identifier&quot;;&#xA;            } &quot;set author ref&quot;;&#xA;            &#xA;          } &quot;set author&quot;;"/>
           </rule>
           <rule>
             <name value="add Immunization entry"/>

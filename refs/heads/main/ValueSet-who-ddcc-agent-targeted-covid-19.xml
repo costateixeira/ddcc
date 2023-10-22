@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="who-ddcc-agent-targeted-covid-19"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XN109</td><td>SARS-CoV-2</td></tr><tr><td>XN0HL</td><td>SARS-CoV-2 Alpha</td></tr><tr><td>XN4Q7</td><td>SARS-CoV-2 Beta</td></tr><tr><td>XN5BQ</td><td>SARS-CoV-2 Gamma</td></tr><tr><td>XN8V6</td><td>SARS-CoV-2 Delta</td></tr><tr><td>XN1GK</td><td>SARS-CoV-2 Epsilon</td></tr><tr><td>XN3ZE</td><td>SARS-CoV-2 Zeta</td></tr><tr><td>XN2V4</td><td>SARS-CoV-2 Eta</td></tr><tr><td>XN4Q1</td><td>SARS-CoV-2 Theta</td></tr><tr><td>XN3UD</td><td>SARS-CoV-2 Iota</td></tr><tr><td>XN9L8</td><td>SARS-CoV-2 Kappa</td></tr><tr><td>XN6AM</td><td>SARS-CoV-2 Lambda</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-DDCC-ICD11-CodeSystem.html"><code>http://id.who.int/icd11/mms</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN109">XN109</a></td><td>SARS-CoV-2</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN0HL">XN0HL</a></td><td>SARS-CoV-2 Alpha</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN4Q7">XN4Q7</a></td><td>SARS-CoV-2 Beta</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN5BQ">XN5BQ</a></td><td>SARS-CoV-2 Gamma</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN8V6">XN8V6</a></td><td>SARS-CoV-2 Delta</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN1GK">XN1GK</a></td><td>SARS-CoV-2 Epsilon</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN3ZE">XN3ZE</a></td><td>SARS-CoV-2 Zeta</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN2V4">XN2V4</a></td><td>SARS-CoV-2 Eta</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN4Q1">XN4Q1</a></td><td>SARS-CoV-2 Theta</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN3UD">XN3UD</a></td><td>SARS-CoV-2 Iota</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN9L8">XN9L8</a></td><td>SARS-CoV-2 Kappa</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN6AM">XN6AM</a></td><td>SARS-CoV-2 Lambda</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN39J">XN39J</a></td><td>SARS-CoV-2 Mu</td></tr><tr><td><a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN161">XN161</a></td><td>SARS-CoV-2 Omicron</td></tr></table></li></ul></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="WHO_DDCC_Agent_Targeted_COVID_19"/>
   <title value="WHO Agent Targeted (COVID-19)"/>
   <status value="draft"/>
-  <date value="2022-03-23T20:58:03+00:00"/>
+  <date value="2023-10-22T07:22:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -76,6 +76,14 @@
       <concept>
         <code value="XN6AM"/>
         <display value="SARS-CoV-2 Lambda"/>
+      </concept>
+      <concept>
+        <code value="XN39J"/>
+        <display value="SARS-CoV-2 Mu"/>
+      </concept>
+      <concept>
+        <code value="XN161"/>
+        <display value="SARS-CoV-2 Omicron"/>
       </concept>
     </include>
   </compose>

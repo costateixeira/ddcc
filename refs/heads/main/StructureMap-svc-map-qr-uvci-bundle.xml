@@ -49,10 +49,10 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
       </div>
   </text>
   <url value="http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="svc-map-qr-uvci-bundle"/>
   <status value="draft"/>
-  <date value="2022-03-23T20:58:03+00:00"/>
+  <date value="2023-10-22T07:22:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

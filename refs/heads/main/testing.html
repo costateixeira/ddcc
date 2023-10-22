@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.WHO.DDCC-VS\Testing - FHIR v4.0.1</title>
+    <title>Testing - WHO Digital Documentation of COVID-19 Certificates (DDCC) v1.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,9 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
-
     <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -32,31 +31,27 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"20"}
-    h3,h4,h5,h6{--heading-prefix:"20"}</style>
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
-
-<div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
-</div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
             <br/>
-            <span style="display:inline-block;">0.3.1 - CI Build
+            <span style="display:inline-block;">1.0.0 - CI Build
 
 
 
@@ -112,8 +107,8 @@
 		</a>
 		<ul class="dropdown-menu">
 		  <li><a href="concepts.html">Key Concepts</a></li>
-		  <li><a href="functional.html">Functional Requirements</a></li>    
-		  <li><a href="usecases.html">Use Cases</a></li>
+		  <li><a href="functional_requirements.html">Functional Requirements</a></li>    
+		  <li><a href="use_cases.html">Use Cases</a></li>
 		  <li><a href="dictionary.html">Data Dictionary</a></li>
 		</ul>
 	</li>
@@ -132,6 +127,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="reference_implementation.html">Reference Implementations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
@@ -141,6 +137,7 @@
 		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Indices<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="artifacts.html">Artifact Index</a></li>
+		   <li><a href="maps.html">Maps</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -176,36 +173,50 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
   <h2>Testing</h2>
   
   
   
-  <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Testing Framework</a></li><li><a href="#2">Test scripts</a></li></ul></div>
+  <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Prototypical Testing Framework</a></li><li><a href="#2">Compliance Testing Framework</a></li></ul></div>
 
-  <a name="1"></a><h3 id="testing-framework">Testing Framework</h3> 
-  <p>A prototypical testing framework is provided at:</p>
-
+  <a name="1"/><h3 id="testing-framework">Prototypical Testing Framework</h3> 
+  
+  <p>A prototypical testing framework is provided:</p>
+  
   <ul>
-    <li><a rel="noopener noreferrer" href="https://github.com/WorldHealthOrganization/ddcc-tests/blob/main/input/pagecontent/index.md" target="_blank">Overview and Objectives</a></li>
+    <li><a rel="noopener noreferrer" href="https://github.com/WorldHealthOrganization/ddcc-tests/blob/main/input/pagecontent/index.md" target="_blank">Overview and objectives of the framework</a></li>
     <li><a rel="noopener noreferrer" href="https://github.com/openhie/ddcc-tests" target="_blank">Code repository</a></li>
-  </ul>  
+  </ul>
+  
+  <p>This testing framework is a basis for understanding the reference actors and transactions, and how users may test their own profiled DDCC-based
+    frameworks. The tooling seeks to provide reuseable artifacts, bulk fake data creation, test fixtures based on
+    common tools, a sandbox for testing, and the ability to run all tests locally on Windows, macOS, and Linux. It uses a prototypical bulk data generator based on templates for FHIR Shorthand and a neutral naming system for individuals in the six official United Nations languages.</p>
+  
+  <p>This framework does not support formal conformance, nor is it authoritative or comprehensive.</p>
 
-  <p>The testing framework does not support formal conformance; it is not authoritative; and it is not comprehensive. Rather it is a
-    basis to understand the reference actors and transactions and how users may test their own profiled DDCC-based
-    frameworks. The tooling endeavors to provide reuseable artifacts, bulk fake data creation, test fixtures based on
-    common tools, a sandbox for testing, and the ability to run all tests locally on Windows, macOS, and Linux. The
-    tooling uses a prototypical bulk data generator based on templates for FHIR Shorthand and a neutral naming system for individuals in
-    the six official United Nations languages.</p>
-
+  <p> Additional resources related to this framework include:</p>
   <ul>
       <li><a rel="noopener noreferrer" href="https://github.com/intrahealth/synthea-elements" target="_blank">Names code repository</a></li>
       <li><a rel="noopener noreferrer" href="https://github.com/intrahealth/bulk-fsh" target="_blank">Bulk FSH generator code repository</a></li>
   </ul>
 
-  <a name="2"></a><h3 id="test-scripts">Test scripts</h3> 
-       <p>Placeholder for test scripts and related resources.</p>
+  <a name="2"/><h3 id="compliance-testing-framework">Compliance Testing Framework</h3> 
+  
+  <p>A compliance testing framework is provided at:</p>
 
+  <ul>
+    <li><a href="https://github.com/WorldHealthOrganization/ddcc-compliance-testing-framework">DDCC Compliance Testing Framework</a></li>
+  </ul>
+  
+  <p>This compliance testing framework tests the following transactions using Gherkin:</p>
+  
+  <ul>
+    <li><a href="transactions.html#submit-health-event"> Submit Health Event</a></li>
+    <li><a href="https://worldhealthorganization.github.io/ddcc/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html"> Generate Health Certificate</a></li>
+    <li><a href="transactions.html#store-health-certificate"> Register Health Certificate</a></li>
+    <li><a href="transactions.html#register-health-certificate"> Store Health Certificate</a></li>
+  </ul>
       
 </div>
 </div>
@@ -229,17 +240,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l425">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 20:58+0000">2022-03-23</span>
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 22, 2023 07:22+0000">2023-10-22</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l474">​</a>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
                 
 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -333,7 +343,7 @@ anchors.add()</script>
             
           if (id) { //To make sure the element has an id
             $(this).append(function () {
-              return $('<a></a>', {
+              return $('<a/>', {
                 id,
                 href: feedbackurl,
                 text: feedbacklabel+' ' ,
